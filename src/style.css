@@ -32,8 +32,8 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
-  background-image: url(./Assets/pre.svg);
+  background-color: #020344;
+  background-image: url(./Assets/loder.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -825,4 +825,17 @@ textarea {
   .container.contact__container {
       width: var(--container-width-sm);
   }
+}
+
+/* Scoll button */
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+.back-to-top:hover{
+  background: #2330e3;
 }
