@@ -5,10 +5,11 @@ import { AddToList } from "./AddtoList";
 import { RemoveFromList } from "./RemoveFromList";
 import {FiSearch} from "react-icons/fi";
 import { Container, Row, Col, Button, Form, InputGroup } from "react-bootstrap";
+import { Link } from "react-router-dom";
 function Anime()
 {
 
-    const [search, setSearch] = useState('s')
+    const [search, setSearch] = useState('f')
     const [animeData, setAnimeData] = useState();
     const [animeInfo, setAnimeInfo] = useState()
     const [myAnimeList, setMyAnimeList] = useState([])
@@ -36,7 +37,7 @@ function Anime()
     }
     const getData = async () =>
     {
-        const res = await fetch(`https://api.jikan.moe/v4/anime?q=${search}&sfw`)
+        const res = await fetch(`https://api.jikan.moe/v4/anime?q=${search}&sfw&limit=5`)
         const resData = await res.json();
         setAnimeData(resData.data)
     }
@@ -63,6 +64,9 @@ function Anime()
         <FiSearch/>
         </Button>
       </InputGroup>
+      <div>
+        <Link to="/anime/animemusic">AnimeMusic</Link>
+      </div>
                 </div>
                 {animeInfo && <AnimeInfo animeInfo={animeInfo} />} 
                 <hr/>

@@ -7,6 +7,7 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Anime from "./components/Anime/Anime";
+import AnimeMusic from "./components/Anime/AnimeMusic/AnimeMusic";
 import {
   BrowserRouter as Router,
   Route,
@@ -16,6 +17,7 @@ import {
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import {HiArrowUp} from "react-icons/hi";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -27,6 +29,27 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
+
+
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 20) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    });
+  }, []);
+
+  // This function will scroll the window to the top 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // for smoothly scrolling
+    });
+  };
 
   return (
     <Router>
@@ -40,9 +63,16 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/anime" element={<Anime />} />
+          <Route path="/anime/animemusic" element={<AnimeMusic />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
+
+        {showButton && (
+          <button onClick={scrollToTop} className="back-to-top btn btn-danger btn-floating btn-lg">
+            <HiArrowUp/>
+          </button>
+        )}
       </div>
     </Router>
   );

@@ -39,7 +39,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <h1>FikriA</h1>
+          <h1>MFikriA</h1>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -92,6 +92,7 @@ function NavBar() {
                 <BsListNested style={{ marginBottom: "2px" }} /> Anime
               </Nav.Link>
             </Nav.Item>
+
 
             <Nav.Item className="fork-btn">
               <Button

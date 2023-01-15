@@ -1,6 +1,9 @@
 import React from "react"
 import { format } from "date-fns"
 import Card from "react-bootstrap/Card";
+import {RiStarSFill, RiGithubFill} from "react-icons/ri";
+import {HiOutlineEye} from "react-icons/hi";
+import {IoIosGitNetwork} from "react-icons/io";
 
 export default function Profile(props) {
   return (
@@ -20,18 +23,23 @@ export default function Profile(props) {
                   Public
                 </p>
               )}
-        <Card.Text>
-        {props.stargazers_count.toLocaleString()} stars
-        {props.watchers_count.toLocaleString()} Watchers
-        {props.language}
-        </Card.Text>
 
-        <small> {format(new Date(props.created_at), "dd MMMM yyyy")} by{" "}
-            {props.owner.login}</small>
+        <Card.Text>
+        <div>
+        <div><RiStarSFill/><b>{props.stargazers_count.toLocaleString()} Stars</b></div>
+              <div><HiOutlineEye/> <b>{props.watchers_count.toLocaleString()} Watchers</b></div>
+              <div><IoIosGitNetwork/> <b>{props.forks_count.toLocaleString()} forks</b></div>
+              <div><b>Language</b> {props.language}</div>
+        </div>
+        </Card.Text>
       </Card.Body>
       <Card.Body>
-        <Card.Link href={props.html_url}>{props.name}</Card.Link>
+        <Card.Link href={props.html_url}><RiGithubFill className="fs-2"/></Card.Link>
       </Card.Body>
+      <Card.Footer>
+      <div className="fs-6">{format(new Date(props.created_at), "dd MMMM yyyy")} by{" "}
+            {props.owner.login}</div>
+      </Card.Footer>
     </Card>
     </>
   )

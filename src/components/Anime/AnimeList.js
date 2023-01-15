@@ -30,6 +30,7 @@ export const AnimeList = ({ animelist, setAnimeInfo, animeComponent, handleList 
                                         </Card.Body>
                                   </Card>
                                   </CardGroup>
+                                  <AddToList/>
                             </div>
                                 </Col>
                         )
