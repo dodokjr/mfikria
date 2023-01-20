@@ -1,16 +1,17 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
+// import Particle from "../Particle";
 import DodokStore from "../../Assets/Projects/DodokStore.png";
-import GithubApi from "./GithubApi";
+import GithubApi from "./Github/GithubApi";
+
 
 
 function Projects() {
   return (
     <>
     <Container fluid className="project-section">
-      <Particle />
+      {/* <Particle /> */}
       <Container>
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
@@ -31,8 +32,8 @@ function Projects() {
           </Col>
         </Row>
       </Container>
+      <GithubApi/>
     </Container>
-    <GithubApi/>
     </>
   );
 }

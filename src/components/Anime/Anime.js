@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 function Anime()
 {
 
-    const [search, setSearch] = useState('f')
+    const [search, setSearch] = useState('naruto')
     const [animeData, setAnimeData] = useState();
     const [animeInfo, setAnimeInfo] = useState()
     const [myAnimeList, setMyAnimeList] = useState([])
@@ -37,7 +37,7 @@ function Anime()
     }
     const getData = async () =>
     {
-        const res = await fetch(`https://api.jikan.moe/v4/anime?q=${search}&sfw&limit=5`)
+        const res = await fetch(`https://api.jikan.moe/v4/anime?q=${search}&sfw&limit=7`)
         const resData = await res.json();
         setAnimeData(resData.data)
     }
@@ -65,7 +65,7 @@ function Anime()
         </Button>
       </InputGroup>
       <div>
-        <Link to="/anime/animemusic">AnimeMusic</Link>
+        <Link to="/musiclibrary">Music</Link>
       </div>
                 </div>
                 {animeInfo && <AnimeInfo animeInfo={animeInfo} />} 
