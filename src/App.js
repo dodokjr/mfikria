@@ -7,8 +7,11 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Anime from "./components/Anime/Anime";
-import AnimeMusic from "./components/Anime/AnimeMusic/AnimeMusic";
-import {
+import Music from "./components/Music/Music";
+import Video from "./components/Video/Video";
+import UpdateList from "./components/UpdateList";
+import
+{
   BrowserRouter as Router,
   Route,
   Routes,
@@ -17,13 +20,16 @@ import {
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {HiArrowUp} from "react-icons/hi";
+import { HiArrowUp } from "react-icons/hi";
 
-function App() {
+function App()
+{
   const [load, upadateLoad] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
+  useEffect(() =>
+  {
+    const timer = setTimeout(() =>
+    {
       upadateLoad(false);
     }, 1200);
 
@@ -33,18 +39,23 @@ function App() {
 
   const [showButton, setShowButton] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 20) {
+  useEffect(() =>
+  {
+    window.addEventListener("scroll", () =>
+    {
+      if (window.pageYOffset > 20)
+      {
         setShowButton(true);
-      } else {
+      } else
+      {
         setShowButton(false);
       }
     });
   }, []);
 
   // This function will scroll the window to the top 
-  const scrollToTop = () => {
+  const scrollToTop = () =>
+  {
     window.scrollTo({
       top: 0,
       behavior: 'smooth' // for smoothly scrolling
@@ -63,14 +74,16 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/anime" element={<Anime />} />
-          <Route path="/anime/animemusic" element={<AnimeMusic />} />
-          <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="/music" element={<Music />} />
+          <Route path="/video" element={<Video />} />
+          <Route path="/updatelist" element={<UpdateList />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
 
         {showButton && (
-          <button onClick={scrollToTop} className="back-to-top btn btn-danger btn-floating btn-lg">
-            <HiArrowUp/>
+          <button onClick={scrollToTop} className="back-to-top btn btn-light btn-floating btn-lg">
+            <HiArrowUp />
           </button>
         )}
       </div>

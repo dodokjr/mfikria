@@ -7,23 +7,29 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { BsListNested } from "react-icons/bs";
-import {
-  AiFillStar,
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
-} from "react-icons/ai";
+import
+  {
+    AiFillStar,
+    AiOutlineHome,
+    AiOutlineFundProjectionScreen,
+    AiOutlineUser,
+    AiOutlineHistory,
+  } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
 
-function NavBar() {
+function NavBar()
+{
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
+  function scrollHandler()
+  {
+    if (window.scrollY >= 20)
+    {
       updateNavbar(true);
-    } else {
+    } else
+    {
       updateNavbar(false);
     }
   }
@@ -43,7 +49,8 @@ function NavBar() {
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
-          onClick={() => {
+          onClick={() =>
+          {
             updateExpanded(expand ? false : "expanded");
           }}
         >
@@ -102,6 +109,9 @@ function NavBar() {
               >
                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
               </Button>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link as={Link} to='/updatelist' onClick={() => updateExpanded(false)}><AiOutlineHistory /></Nav.Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

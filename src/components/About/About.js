@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Particle";
+// import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
@@ -8,10 +8,16 @@ import laptopImg from "../../Assets/about.png";
 import Me from "../../Assets/me.png"
 import Toolstack from "./Toolstack";
 
-function About() {
+function About()
+{
+  useEffect(() =>
+  {
+    document.title = "MFikriA  | About";
+  });
+
   return (
     <Container fluid className="about-section">
-      <Particle />
+      {/* <Particle /> */}
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
