@@ -18,7 +18,6 @@ function DatePeker()
             <Container>
                 <Col md="auto">
                     <DatePicker
-                        className="center"
                         selected={startDate}
                         onChange={onChange}
                         startDate={startDate}

@@ -742,9 +742,6 @@ button:focus {
   display: none !important;
 }
 
-.bg-anime {
-
-}
 
 .container.contact__container {
   width: 58%;
@@ -848,6 +845,33 @@ textarea {
   color: rgb(0, 0, 0) !important;
 }
 
+.anime {
+  position: relative !important;
+padding-top: 150px !important;
+padding-bottom: 30px !important;
+background-image: var(--section-background-color) !important;
+color: rgb(0, 0, 0) !important;
+}
+
+.mylist{
+  color: #fff;
+}
+
+.video{
+  position: relative !important;
+padding-top: 150px !important;
+padding-bottom: 30px !important;
+background-image: var(--section-background-color) !important;
+color: rgb(0, 0, 0) !important;
+}
+
+.music {
+  position: relative !important;
+padding-top: 150px !important;
+padding-bottom: 30px !important;
+background-image: var(--section-background-color) !important;
+color: rgb(255, 246, 246) !important;
+}
 
 .time {
   font-size: 40px;

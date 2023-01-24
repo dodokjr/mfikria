@@ -6,7 +6,7 @@ import
   AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaDiscord } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function Footer()
@@ -50,6 +50,16 @@ function Footer()
                   rel="noopener noreferrer"
                 >
                   <AiFillInstagram />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://discord.gg/TfEQz6MU"
+                  style={{ color: "white" }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaDiscord />
                 </a>
               </li>
             </ul>

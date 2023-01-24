@@ -190,7 +190,7 @@ function Music()
 
     return (
         <>
-            <div className="containerr">
+            <div className="containerr music">
                 <audio src='#' ref={currentAudio} onEnded={handleNextSong} onTimeUpdate={handleAudioUpdate}></audio>
                 <video src={vidArray[videoIndex]} loop muted autoPlay className='backgroundVideo'></video>
                 <div className="blackScreen"></div>

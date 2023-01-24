@@ -4,15 +4,18 @@ import Profile from "./Profile"
 import { Container, Row, Col } from "react-bootstrap";
 
 
-function GithubApi() {
+function GithubApi()
+{
   const [items, setItems] = useState([])
   // Change this to any username whose repositories you want to get
   const [user] = useState("dodokjr")
 
-  useEffect(() => {
-    const fetchRepos = async () => {
+  useEffect(() =>
+  {
+    const fetchRepos = async () =>
+    {
       const res = await fetch(
-        `https://api.github.com/users/${user}/repos?per_page=6&sort=updated`
+        `https://api.github.com/users/${user}/repos?sort=updated`
       )
       const data = await res.json()
       setItems(data)
@@ -24,24 +27,24 @@ function GithubApi() {
   return (
     <>
       <h1 className="project-heading">
-          My repos Github <strong className="purple">{user} </strong>
-        </h1>
-        <p style={{ color: "white" }}>
-          Project Hare
-        </p>
+        My repos Github <strong className="purple">{user} </strong>
+      </h1>
+      <p style={{ color: "white" }}>
+        Project Hare
+      </p>
 
       {!items ? (
         <Loading />
       ) : (
-       <Container>
-         <Row>
+        <Container>
+          <Row>
             {items.map((item) => (
-            <Col  md={4} className="project-card">
-            <Profile key={item.id} {...item} />
-            </Col>
-          ))}
-        </Row>
-       </Container>
+              <Col md={4} className="project-card">
+                <Profile key={item.id} {...item} />
+              </Col>
+            ))}
+          </Row>
+        </Container>
       )}
     </>
   )
