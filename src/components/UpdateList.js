@@ -18,6 +18,12 @@ const UpdateList = () =>
         setTime(time)
     }
     setInterval(UpdateTime)
+
+    useEffect(() =>
+    {
+        document.title = "MfikriA | UpdateList"
+    });
+
     return (
         <>
             <Container fluid className="update">
@@ -28,26 +34,56 @@ const UpdateList = () =>
                     <div className="text-center time">{ctime}</div>
                     <hr />
                     <Row xs={1} md={2} className="g-4">
-                        {Array.from({ length: 10 }).map((_, idx) => (
-                            <Col md={2}>
-                                <Card className="text-center">
-                                    <Card.Header>Update Featured</Card.Header>
-                                    <Card.Body>
-                                        <Card.Title>Video</Card.Title>
-                                        <Card.Text>
-                                            Masih dalam Perbaikan
-                                        </Card.Text>
-                                        <Link to='/video' className="btn btn-primary">Video</Link>
-                                    </Card.Body>
-                                    <Card.Footer className="text-muted">2 days ago</Card.Footer>
-                                </Card>
-                            </Col>
-                        ))}
+                        <Col md={2}>
+                            <Card className="text-center">
+                                <Card.Header>Update Featured</Card.Header>
+                                <Card.Body>
+                                    <Card.Title>Musik dan Video</Card.Title>
+                                    <Card.Text>
+                                        Ada penambahan Fitur video dan musik
+                                    </Card.Text>
+                                    <Link to='/video' className="btn btn-primary">Video</Link>
+                                    <Link to='/music' className="btn btn-primary">Music</Link>
+                                </Card.Body>
+                                <Card.Footer className="text-muted">22 / 01 / 2023</Card.Footer>
+                            </Card>
+                        </Col>
+                        <Col md={2}>
+                            <Card className="text-center">
+                                <Card.Header>Update Featured</Card.Header>
+                                <Card.Body>
+                                    <Card.Title>Desain</Card.Title>
+                                    <Card.Text>
+                                        Ada penambahan fitur kecil + ada Update dari Github repositories
+                                    </Card.Text>
+                                    <Link to='/' className="btn btn-primary">New Update</Link>
+                                </Card.Body>
+                                <Card.Footer className="text-muted">24 / 01 / 2023</Card.Footer>
+                            </Card>
+                        </Col>
+                        <Col md={2}>
+                            <Card className="text-center">
+                                <Card.Header>Update Featured</Card.Header>
+                                <Card.Body>
+                                    <Card.Title>Calculator Dan Hal-hal kecil seperti penghapusan background</Card.Title>
+                                    <Card.Text>
+                                        Calculator Yang tersedia saat ini masih Berjalan Silahkan diGunakan Selamat Menikmati
+                                    </Card.Text>
+                                    <Link to='/projectgabut/calculator' className="btn btn-primary">Calculator</Link>
+                                </Card.Body>
+                                <Card.Footer className="text-muted">22 / 01 / 2023</Card.Footer>
+                            </Card>
+                        </Col>
                     </Row>
                 </Container>
             </Container>
             <DatePeker />
             <hr />
+            <div>
+                <Link to="/music" className="btn btn-link">Music</Link>
+                <Link to="/video" className="btn btn-link">Video</Link>
+                <Link to='/projectgabut/calculator' className="btn btn-link">Calculator</Link>
+            </div>
             <Contact />
         </>
     )

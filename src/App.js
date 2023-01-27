@@ -5,11 +5,12 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
-import Resume from "./components/Resume/ResumeNew";
+import Price from "./components/Price/Price";
 import Anime from "./components/Anime/Anime";
 import Music from "./components/Music/Music";
 import Video from "./components/Video/Video";
 import UpdateList from "./components/UpdateList";
+import Calculator from "./components/ProjectGabut/Calculator/Calculator";
 import
 {
   BrowserRouter as Router,
@@ -17,7 +18,7 @@ import
   Routes,
   Navigate
 } from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./components/ScrollToTop"
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { HiArrowUp } from "react-icons/hi";
@@ -72,11 +73,12 @@ function App()
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="/price" element={<Price />} />
           <Route path="/anime" element={<Anime />} />
           <Route path="/music" element={<Music />} />
           <Route path="/video" element={<Video />} />
           <Route path="/updatelist" element={<UpdateList />} />
+          <Route path="/projectgabut/calculator" element={<Calculator />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />

@@ -32,7 +32,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #020344;
+  background-color: #000000;
   background-image: url(./Assets/loder.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -57,18 +57,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: rgba(34, 33, 71, 0.959);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(64, 61, 245, 0.959);
+  background: rgba(34, 33, 71, 0.959);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(64, 61, 245, 0.959);
+  background: rgba(24, 24, 34, 0.959);
   border-radius: 12px;
 }
 
@@ -257,7 +257,7 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  background-image: var(--image-gradient), url(./Assets/Background.png);
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -518,14 +518,14 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  background-color: rgb(50, 37, 228) !important;
+  border-color: rgb(50, 37, 228) !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  background-color: rgb(34, 26, 141) !important;
+  border-color: rgb(34, 26, 141) !important;
 }
 .btn:focus {
   outline: none !important;
@@ -560,7 +560,7 @@ button:focus {
   text-align: center !important;
   border-radius: 5px !important;
   display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  box-shadow: 4px 5px 4px 3px rgba(41, 32, 160, 0.411) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
 }
@@ -743,7 +743,7 @@ button:focus {
 }
 
 
-.container.contact__container {
+.contact__container {
   width: 58%;
   display: grid;
   grid-template-columns: 30% 58%;
@@ -842,6 +842,14 @@ textarea {
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+.price {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: url(./Assets/Background.png) !important;
   color: rgb(0, 0, 0) !important;
 }
 

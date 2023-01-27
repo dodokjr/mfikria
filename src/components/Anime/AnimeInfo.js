@@ -4,13 +4,13 @@ import ListGroup from 'react-bootstrap/ListGroup';
 
 export const AnimeInfo = (props) =>
 {
-  const { title, trailer: { youtube_id, embed_url }, genres: { name }, images: { jpg: { large_image_url } }, Source, rank, score, popularity, status, rating, duration, season, url, synopsis } = props.animeInfo
+  const { title, trailer: { youtube_id, embed_url }, genres: { name }, images: { webp: { large_image_url } }, Source, rank, score, popularity, status, rating, duration, season, url, synopsis } = props.animeInfo
   return (
     <div>
       <Card style={{ width: '29rem' }}>
+        <Card.Title>{title}</Card.Title>
         <Card.Img variant="top" src={large_image_url} />
         <Card.Body>
-          <Card.Title>{title}</Card.Title>
           <Card.Text>
             {synopsis}
           </Card.Text>
@@ -27,8 +27,8 @@ export const AnimeInfo = (props) =>
           <ListGroup.Item>season:{season}</ListGroup.Item>
         </ListGroup>
         <Card.Body>
-          <Card.Link href={embed_url}>Link : {youtube_id}</Card.Link>
-          <Card.Link href={url}>{title}</Card.Link>
+          <Card.Link href={embed_url} target="_blank">{youtube_id}</Card.Link>
+          <Card.Link href={url} target="_blank">{title}</Card.Link>
         </Card.Body>
       </Card>
     </div>

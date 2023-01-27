@@ -8,13 +8,14 @@ import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { BsListNested } from "react-icons/bs";
 import
-  {
-    AiFillStar,
-    AiOutlineHome,
-    AiOutlineFundProjectionScreen,
-    AiOutlineUser,
-    AiOutlineHistory,
-  } from "react-icons/ai";
+{
+  AiFillStar,
+  AiOutlineHome,
+  AiOutlineFundProjectionScreen,
+  AiOutlineUser,
+  AiOutlineHistory,
+} from "react-icons/ai";
+import { FaRegMoneyBillAlt } from "react-icons/fa"
 
 import { CgFileDocument } from "react-icons/cg";
 
@@ -93,6 +94,16 @@ function NavBar()
             <Nav.Item>
               <Nav.Link
                 as={Link}
+                to="/price"
+                onClick={() => updateExpanded(false)}
+              >
+                <FaRegMoneyBillAlt style={{ marginBottom: "2px" }} /> Price
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
                 to="/anime"
                 onClick={() => updateExpanded(false)}
               >
@@ -111,7 +122,7 @@ function NavBar()
               </Button>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link as={Link} to='/updatelist' onClick={() => updateExpanded(false)}><AiOutlineHistory /></Nav.Link>
+              <Nav.Link as={Link} to='/updatelist' onClick={() => updateExpanded(false)} title="History And Update Website"><AiOutlineHistory /></Nav.Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

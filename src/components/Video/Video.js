@@ -10,7 +10,6 @@ const Video = () =>
     {
         document.title = "MFikriA  | Video";
     });
-    console.log('Masih Dalam Perbaikan Di tunggu Update Selanjutnya')
     return (
         <>
             <Container fluid className="video">

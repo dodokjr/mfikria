@@ -22,7 +22,7 @@ export const AnimeList = ({ animelist, setAnimeInfo, animeComponent, handleList 
                                     <div key={index} onClick={() => setAnimeInfo(anime)} className="item">
                                         <CardGroup>
                                             <Card className="project-card-view">
-                                                <Card.Img variant="top" src={anime.images.jpg.large_image_url} alt="card-img" />
+                                                <Card.Img variant="top" src={anime.images.webp.large_image_url} alt="card-img" />
                                                 <Card.Body>
                                                     <Card.Title>{anime.title}</Card.Title>
                                                     <Card.Text style={{ textAlign: "justify" }}>

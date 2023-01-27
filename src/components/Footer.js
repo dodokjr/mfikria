@@ -5,6 +5,7 @@ import
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
+  AiFillYoutube,
 } from "react-icons/ai";
 import { FaLinkedinIn, FaDiscord } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -60,6 +61,16 @@ function Footer()
                   rel="noopener noreferrer"
                 >
                   <FaDiscord />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.youtube.com/channel/UCLP0I71nvbJ2D_Y5y-mwbEw"
+                  style={{ color: "white" }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillYoutube />
                 </a>
               </li>
             </ul>

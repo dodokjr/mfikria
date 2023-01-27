@@ -5,7 +5,7 @@ import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
-import Me from "../../Assets/me.png"
+import Me from "../../Assets/me.webp"
 import Toolstack from "./Toolstack";
 
 function About()

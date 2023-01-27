@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 function Anime()
 {
 
-    const [search, setSearch] = useState('s')
+    const [search, setSearch] = useState('naruto')
     const [animeData, setAnimeData] = useState();
     const [animeInfo, setAnimeInfo] = useState()
     const [myAnimeList, setMyAnimeList] = useState([])
@@ -60,20 +60,13 @@ function Anime()
                     <h5>list Anime By jikan</h5>
                     <div>
                         <hr />
-                        <InputGroup className="mb-3" name="search" id="default-search" type="search" onChange={(e) => setSearch(e.target.value)} placeholder="Search Your Anime" required>
+                        <InputGroup className="mb-3" name="search" type="search" onChange={(e) => setSearch(e.target.value)} placeholder="Search Your Anime" required>
                             <Form.Control
-                                placeholder="Recipient's username"
+                                placeholder="Seacrh your Anime"
                                 aria-label="Recipient's username"
                                 aria-describedby="basic-addon2"
                             />
-                            <Button variant="outline-secondary" id="button-addon2">
-                                <FiSearch />
-                            </Button>
                         </InputGroup>
-                        <div>
-                            <Link to="/music" className="btn btn-link">Music</Link>
-                            <Link to="/video" className="btn btn-link">Video</Link>
-                        </div>
                     </div>
                     {animeInfo && <AnimeInfo animeInfo={animeInfo} />}
                     <hr />

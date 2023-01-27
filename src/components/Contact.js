@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import EmojiPicker from 'emoji-picker-react';
 import { Card, Alert, Container, Form, Button } from 'react-bootstrap';
 
 
@@ -57,6 +58,7 @@ const Contact = () =>
               <Form.Control as="textarea" rows={3} placeholder="Your message"
                 name="message"
                 required />
+              {/* <EmojiPicker /> */}
             </Form.Group>
             <Button type="submit" variant="light">
               Send Message
