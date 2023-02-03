@@ -33,8 +33,8 @@ const UpdateList = () =>
                     </h1>
                     <div className="text-center time">{ctime}</div>
                     <hr />
-                    <Row xs={1} md={2} className="g-4">
-                        <Col md={2}>
+                    <Row xs={1} md={4} className="g-4">
+                        <Col md={4}>
                             <Card className="text-center">
                                 <Card.Header>Update Featured</Card.Header>
                                 <Card.Body>
@@ -48,7 +48,7 @@ const UpdateList = () =>
                                 <Card.Footer className="text-muted">22 / 01 / 2023</Card.Footer>
                             </Card>
                         </Col>
-                        <Col md={2}>
+                        <Col md={4}>
                             <Card className="text-center">
                                 <Card.Header>Update Featured</Card.Header>
                                 <Card.Body>
@@ -61,7 +61,7 @@ const UpdateList = () =>
                                 <Card.Footer className="text-muted">24 / 01 / 2023</Card.Footer>
                             </Card>
                         </Col>
-                        <Col md={2}>
+                        <Col md={4}>
                             <Card className="text-center">
                                 <Card.Header>Update Featured</Card.Header>
                                 <Card.Body>
@@ -71,20 +71,52 @@ const UpdateList = () =>
                                     </Card.Text>
                                     <Link to='/projectgabut/calculator' className="btn btn-primary">Calculator</Link>
                                 </Card.Body>
-                                <Card.Footer className="text-muted">22 / 01 / 2023</Card.Footer>
+                                <Card.Footer className="text-muted">27 / 01 / 2023</Card.Footer>
+                            </Card>
+                        </Col>
+                        <Col md={4}>
+                            <Card className="text-center">
+                                <Card.Header>Update Featured</Card.Header>
+                                <Card.Body>
+                                    <Card.Title>Benerin Bug dan Desain</Card.Title>
+                                    <Card.Text>
+                                        Bug and Desain
+                                    </Card.Text>
+                                </Card.Body>
+                                <Card.Footer className="text-muted">28 / 01 / 2023</Card.Footer>
+                            </Card>
+                        </Col>
+                        <Col md={4}>
+                            <Card className="text-center">
+                                <Card.Header>Update Featured</Card.Header>
+                                <Card.Body>
+                                    <Card.Title>Add Api Rest</Card.Title>
+                                    <Card.Text>
+                                        Api Rest Github
+                                    </Card.Text>
+                                </Card.Body>
+                                <Card.Footer className="text-muted">29 / 01 / 2023</Card.Footer>
+                            </Card>
+                        </Col>
+                        <Col md={4}>
+                            <Card className="text-center">
+                                <Card.Header>Update Featured</Card.Header>
+                                <Card.Body>
+                                    <Card.Title>Crypto</Card.Title>
+                                    <Card.Text>
+                                        New App <Link to='/projectgabut/coin'>#Crypto</Link>
+                                    </Card.Text>
+                                </Card.Body>
+                                <Card.Footer className="text-muted">03 / 02 / 2023</Card.Footer>
                             </Card>
                         </Col>
                     </Row>
+                    <hr />
+                    <DatePeker />
+                    <hr />
+                    <Contact />
                 </Container>
             </Container>
-            <DatePeker />
-            <hr />
-            <div>
-                <Link to="/music" className="btn btn-link">Music</Link>
-                <Link to="/video" className="btn btn-link">Video</Link>
-                <Link to='/projectgabut/calculator' className="btn btn-link">Calculator</Link>
-            </div>
-            <Contact />
         </>
     )
 }

@@ -36,9 +36,10 @@ function Projects()
               />
             </Col>
           </Row>
+          <GithubApi />
         </Container>
       </Container>
-      <GithubApi />
+
     </>
   );
 }

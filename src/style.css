@@ -14,6 +14,11 @@ html {
   --imp-text-color: #3037fb;
 }
 
+body{
+  background-image:  url(./Assets/Background.png) !important;
+}
+
+
 .blue {
   color: var(--imp-text-color) !important;
 }
@@ -257,7 +262,7 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/Background.png);
+  background-image: var(--image-gradient);
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -318,6 +323,7 @@ button:focus {
 }
 
 .home-about-section {
+  background: var(--image-gradient);
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
@@ -460,7 +466,7 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  box-shadow: 0 4px 5px 3px rgba(35, 38, 218, 0.459) !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -470,7 +476,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 4px 5px rgba(35, 38, 218, 0.459) !important;
 }
 
 .blog-card {
@@ -483,7 +489,7 @@ button:focus {
 
 .blog-card-view {
   background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
+  box-shadow: 0 3px 3px 2px rgba(35, 38, 218, 0.459) !important;
   color: white !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
@@ -501,7 +507,7 @@ button:focus {
 .blog-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
+  box-shadow: 0 3px 3px 5px rgba(35, 38, 218, 0.459) !important;
 }
 
 .card-img-top {
@@ -849,7 +855,7 @@ textarea {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: url(./Assets/Background.png) !important;
+  background-image: url(./Assets/Background.png), var(--image-gradient) !important;
   color: rgb(0, 0, 0) !important;
 }
 
@@ -1185,4 +1191,223 @@ color: rgb(255, 246, 246) !important;
 .openemr-calendar .ui-datepicker-month {
   margin-right: 10px !important;
 }
+
+/* crypto */
+.crypto {
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color: rgb(255, 255, 255) !important;
+}
+.img-symbol img {
+    height: 40px;
+    margin-right: 8px;
+    width: auto;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0A0A0A;
+  box-shadow: 0px 0px 12px #313131;
+  border-radius: 8px;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 2rem;
+  padding: .1rem 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.coin-name {
+  margin-left: -.4rem;
+}
+
+.coin-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0A0A0A;
+  box-shadow: 0px 0px 12px #313131;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 2rem;
+  padding: .4rem 1rem;
+}
+
+.coin-row:hover {
+  transform: scale(1.04);
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+.icon {
+  font-size: 2.7rem;
+  color: #00f08c;
+  margin-left: 0.5rem;
+}
+
+.main-head {
+  font-size: 2.5rem;
+}
+
+.cyan {
+  color: #16b7f2;
+}
+
+.red {
+  color: #f50505;
+}
+
+.green {
+  color: #0be044;
+}
+
+.coin-container .content {
+  max-width: 740px;
+  margin: 1rem auto;
+  padding: .7rem 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #0A0A0A;
+  box-shadow: 0px 0px 12px #313131;
+  border-radius: 8px;
+}
+
+.rank {
+  margin-top: 1rem;
+}
+
+.rank-btn {
+  border: 1px solid #16b7f2;
+  box-shadow: 0px 0px 8px #16b7f2;
+  background-color: #16b7f2;
+  border-radius: 8px;
+  padding: .2rem;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.info .coin-heading {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  font-size: 1.8rem;
+}
+
+.info .coin-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.info p {
+  padding-right: 1rem;
+}
+
+table {
+  margin: .5rem 0;
+}
+
+td,
+th {
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #333;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  width: 100%;
+}
+
+.stats .row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #808080;
+  margin: .6rem 0;
+  padding-bottom: .5rem;
+}
+
+.stats .row p:first-child {
+  color: #d3d3d3;
+}
+
+.about h3 {
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 700px) {
+  .coin-container .content {
+      max-width: 100%;
+      margin: .5rem;
+      padding: 0 .5rem;
+  }
+
+  .stats {
+      grid-template-columns: 1fr;
+  }
+
+  td,
+  th {
+      padding: 3px;
+  }
+
+  .rank {
+      padding-top: 0.8rem;
+      padding-left: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 418px) {
+  .main-head {
+      font-size: 2.1rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .info .coin-price {
+      font-size: 0.898rem;
+  }
+
+  .info .coin-heading {
+      font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-head {
+      font-size: 1.9rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .info .coin-price {
+      font-size: 0.714rem;
+  }
+
+  .info .coin-heading {
+      font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .info .coin-price {
+      font-size: 0.6rem;
+  }
+
+  .info .coin-heading {
+      font-size: 1.05rem;
+  }
+}
+
 

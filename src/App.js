@@ -11,6 +11,8 @@ import Music from "./components/Music/Music";
 import Video from "./components/Video/Video";
 import UpdateList from "./components/UpdateList";
 import Calculator from "./components/ProjectGabut/Calculator/Calculator";
+import Coin from "./components/ProjectGabut/Crypto/Coin";
+import Coins from "./components/ProjectGabut/Crypto/Coins";
 import
 {
   BrowserRouter as Router,
@@ -22,6 +24,7 @@ import ScrollToTop from "./components/ScrollToTop"
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { HiArrowUp } from "react-icons/hi";
+import axios from "axios";
 
 function App()
 {
@@ -54,6 +57,22 @@ function App()
     });
   }, []);
 
+
+  //crypto
+  const [coins, setCoins] = useState([]);
+  const api = "https://api-mfikria.vercel.app/api/crypto/"
+
+  useEffect(() =>
+  {
+    axios.get(api).then((response) =>
+    {
+      setCoins(response.data)
+    }).catch((error) =>
+    {
+      console.log(error)
+    })
+  }, [])
+
   // This function will scroll the window to the top 
   const scrollToTop = () =>
   {
@@ -79,6 +98,9 @@ function App()
           <Route path="/video" element={<Video />} />
           <Route path="/updatelist" element={<UpdateList />} />
           <Route path="/projectgabut/calculator" element={<Calculator />} />
+          <Route path="/projectgabut/coin" element={<Coins coins={coins} />}>
+            <Route path=':coinId' element={<Coin />} />
+          </Route>
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />

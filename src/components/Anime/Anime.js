@@ -37,7 +37,7 @@ function Anime()
     }
     const getData = async () =>
     {
-        const res = await fetch(`https://api.jikan.moe/v4/anime?q=${search}&sfw&limit=8`)
+        const res = await fetch(`https://api-mfikria.vercel.app/api/anime/${search}`)
         const resData = await res.json();
         setAnimeData(resData.data)
     }

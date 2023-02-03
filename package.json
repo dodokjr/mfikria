@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.2.2",
     "bootstrap": "^5.2.3",
-    "emoji-picker-react": "^4.4.7",
+    "dompurify": "^2.4.3",
     "mathjs": "^11.5.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",

@@ -1,14 +1,16 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import {
-  SiWindows,
-  SiVisualstudiocode,
-  SiPostman,
-  SiHeroku,
-  SiNetlify,
-} from "react-icons/si";
+import
+  {
+    SiWindows,
+    SiVisualstudiocode,
+    SiPostman,
+    SiVercel,
+    SiNetlify,
+  } from "react-icons/si";
 
-function Toolstack() {
+function Toolstack()
+{
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
@@ -21,7 +23,7 @@ function Toolstack() {
         <SiNetlify />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiHeroku />
+        <SiVercel />
       </Col>
     </Row>
   );

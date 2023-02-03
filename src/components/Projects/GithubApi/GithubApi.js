@@ -15,7 +15,7 @@ function GithubApi()
     const fetchRepos = async () =>
     {
       const res = await fetch(
-        `https://api.github.com/users/${user}/repos?sort=updated`
+        `https://api-mfikria.vercel.app/api/github/${user}/dodokjr/repos`
       )
       const data = await res.json()
       setItems(data)

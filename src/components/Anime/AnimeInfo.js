@@ -7,7 +7,7 @@ export const AnimeInfo = (props) =>
   const { title, trailer: { youtube_id, embed_url }, genres: { name }, images: { webp: { large_image_url } }, Source, rank, score, popularity, status, rating, duration, season, url, synopsis } = props.animeInfo
   return (
     <div>
-      <Card style={{ width: '29rem' }}>
+      <Card style={{ width: '24rem' }}>
         <Card.Title>{title}</Card.Title>
         <Card.Img variant="top" src={large_image_url} />
         <Card.Body>

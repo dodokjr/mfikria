@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import EmojiPicker from 'emoji-picker-react';
 import { Card, Alert, Container, Form, Button } from 'react-bootstrap';
 
 

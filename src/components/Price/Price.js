@@ -16,8 +16,8 @@ const Price = () =>
                         My Price
                     </h1>
                     <hr />
-                    <Row xs={1} md={2} className="g-4">
-                        <Col md={2}>
+                    <Row xs={1} md={3} className="g-4">
+                        <Col md={4}>
                             <Card className="text-center">
                                 <Card.Header>Low</Card.Header>
                                 <Card.Body>
@@ -33,7 +33,7 @@ const Price = () =>
                                 <Card.Footer className="text-muted">Contact Me</Card.Footer>
                             </Card>
                         </Col>
-                        <Col md={2}>
+                        <Col md={4}>
                             <Card className="text-center">
                                 <Card.Header>Medium Price</Card.Header>
                                 <Card.Body>
@@ -50,7 +50,7 @@ const Price = () =>
                                 <Card.Footer className="text-muted">Contact Me</Card.Footer>
                             </Card>
                         </Col>
-                        <Col md={2}>
+                        <Col md={4}>
                             <Card className="text-center">
                                 <Card.Header>Hard Price</Card.Header>
                                 <Card.Body>
