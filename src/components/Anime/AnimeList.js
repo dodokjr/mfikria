@@ -1,10 +1,6 @@
-import React from 'react';
-import Card from "react-bootstrap/Card";
-import Container from 'react-bootstrap/Container';
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
+import { React, useState } from 'react';
 import { AddToList } from './AddtoList';
-import { CardGroup } from 'react-bootstrap';
+import { CardGroup, Container, Card, Col, Button } from 'react-bootstrap';
 
 
 export const AnimeList = ({ animelist, setAnimeInfo, animeComponent, handleList }) =>

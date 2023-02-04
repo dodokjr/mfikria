@@ -1,15 +1,36 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
-import Me from "../../Assets/me.webp"
+import Me from "../../Assets/me.webp";
+import Milly from "../../Assets/milly-anime.gif";
+import Shikimori from "../../Assets/shiki-mori-shikimoris-not-just-cute.gif"
 import Toolstack from "./Toolstack";
+import ProfileGithub from "./ProfileGithub";
 
 function About()
 {
+  const [profile, setProfile] = useState([])
+  // Change this to any username whose repositories you want to get
+  const [user] = useState("dodokjr")
+
+  useEffect(() =>
+  {
+    const fetchProfile = async () =>
+    {
+      const res = await fetch(
+        `https://api-mfikria.vercel.app/v1/${user}`
+      )
+      const data = await res.json()
+      setProfile(data)
+    }
+
+    fetchProfile()
+  }, [user])
+
   useEffect(() =>
   {
     document.title = "MFikriA  | About";
@@ -31,6 +52,7 @@ function About()
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
               Know Who <strong className="purple">I'M</strong>
             </h1>
+            <p>{profile.bio}</p>
             <Aboutcard />
           </Col>
           <Col
@@ -38,9 +60,26 @@ function About()
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={Me} alt="about" className="img-fluid" />
+            <img src={profile.avatar_url} alt={profile.name} className="img-fluid" />
           </Col>
+          <div>Github Following {profile.following}</div>
+          <div>Github Followers {profile.followers}</div>
         </Row>
+        <div>
+          <h1 className="">Galery</h1>
+          <Row md={4} xs={1} className='g-4'>
+            <Col md={4}>
+              <img src={Me} alt={profile.name} width={190} className="img-fluid" />
+            </Col>
+            <Col md={4}>
+              <img src={Milly} alt='Wibu berkelas' width={190} className='img-fluid' />
+            </Col>
+            <Col md={4}>
+              <img src={Shikimori} alt='Wibu berkelas' width={190} className='img-fluid' />
+            </Col>
+          </Row>
+        </div>
+        {/* Tool And Stack */}
         <h1 className="project-heading">
           Professional <strong className="purple">Skillset </strong>
         </h1>

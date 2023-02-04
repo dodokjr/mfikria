@@ -40,10 +40,8 @@ const UpdateList = () =>
                                 <Card.Body>
                                     <Card.Title>Musik dan Video</Card.Title>
                                     <Card.Text>
-                                        Ada penambahan Fitur video dan musik
+                                        Ada penambahan Fitur <Link to='/video'>#Video</Link> dan <Link to='/music'>#Music</Link>
                                     </Card.Text>
-                                    <Link to='/video' className="btn btn-primary">Video</Link>
-                                    <Link to='/music' className="btn btn-primary">Music</Link>
                                 </Card.Body>
                                 <Card.Footer className="text-muted">22 / 01 / 2023</Card.Footer>
                             </Card>
@@ -56,7 +54,6 @@ const UpdateList = () =>
                                     <Card.Text>
                                         Ada penambahan fitur kecil + ada Update dari Github repositories
                                     </Card.Text>
-                                    <Link to='/' className="btn btn-primary">New Update</Link>
                                 </Card.Body>
                                 <Card.Footer className="text-muted">24 / 01 / 2023</Card.Footer>
                             </Card>
@@ -67,9 +64,8 @@ const UpdateList = () =>
                                 <Card.Body>
                                     <Card.Title>Calculator Dan Hal-hal kecil seperti penghapusan background</Card.Title>
                                     <Card.Text>
-                                        Calculator Yang tersedia saat ini masih Berjalan Silahkan diGunakan Selamat Menikmati
+                                        <Link to='/projectgabut/calculator'>#Calculator</Link> Yang tersedia saat ini masih Berjalan Silahkan diGunakan Selamat Menikmati
                                     </Card.Text>
-                                    <Link to='/projectgabut/calculator' className="btn btn-primary">Calculator</Link>
                                 </Card.Body>
                                 <Card.Footer className="text-muted">27 / 01 / 2023</Card.Footer>
                             </Card>
@@ -108,6 +104,18 @@ const UpdateList = () =>
                                     </Card.Text>
                                 </Card.Body>
                                 <Card.Footer className="text-muted">03 / 02 / 2023</Card.Footer>
+                            </Card>
+                        </Col>
+                        <Col md={4}>
+                            <Card className="text-center">
+                                <Card.Header>Update Featured</Card.Header>
+                                <Card.Body>
+                                    <Card.Title>Benerin Bug, Desain Serta Mempersingkat api</Card.Title>
+                                    <Card.Text>
+                                        Bug, Desain, Serta Mempersingkat api
+                                    </Card.Text>
+                                </Card.Body>
+                                <Card.Footer className="text-muted">05 / 02 / 2023</Card.Footer>
                             </Card>
                         </Col>
                     </Row>

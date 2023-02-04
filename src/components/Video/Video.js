@@ -17,7 +17,7 @@ const Video = () =>
                     playsInline
                     width={350}
                     poster="/assets/logo.png"
-                    src={Va}
+                    src="https://trimtube.vercel.app/video?id=JC3uOHmZenw&start=0&end=0"
                 />
             </Container>
         </>

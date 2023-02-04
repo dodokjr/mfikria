@@ -25,6 +25,7 @@ import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { HiArrowUp } from "react-icons/hi";
 import axios from "axios";
+import NotFound from "./components/NotFound";
 
 function App()
 {
@@ -60,7 +61,7 @@ function App()
 
   //crypto
   const [coins, setCoins] = useState([]);
-  const api = "https://api-mfikria.vercel.app/api/crypto/"
+  const api = "https://api-mfikria.vercel.app/v3/"
 
   useEffect(() =>
   {
@@ -101,7 +102,7 @@ function App()
           <Route path="/projectgabut/coin" element={<Coins coins={coins} />}>
             <Route path=':coinId' element={<Coin />} />
           </Route>
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
 

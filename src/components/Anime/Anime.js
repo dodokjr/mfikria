@@ -3,16 +3,17 @@ import { AnimeList } from "./AnimeList";
 import { AnimeInfo } from "./AnimeInfo";
 import { AddToList } from "./AddtoList";
 import { RemoveFromList } from "./RemoveFromList";
+import { ModalAnime } from "./ModalAnime";
 import { FiSearch } from "react-icons/fi";
 import { Container, Row, Col, Button, Form, InputGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import axios from "axios";
 function Anime()
 {
-
-    const [search, setSearch] = useState('naruto')
-    const [animeData, setAnimeData] = useState();
-    const [animeInfo, setAnimeInfo] = useState()
-    const [myAnimeList, setMyAnimeList] = useState([])
+    const [search, setSearch] = useState('e')
+    const [animeData, setAnimeData] = useState([]);
+    const [animeInfo, setAnimeInfo] = useState();
+    const [myAnimeList, setMyAnimeList] = useState([]);
 
     const addTo = (anime) =>
     {
@@ -37,7 +38,7 @@ function Anime()
     }
     const getData = async () =>
     {
-        const res = await fetch(`https://api-mfikria.vercel.app/api/anime/${search}`)
+        const res = await fetch(`https://api-mfikria.vercel.app/v2/${search}`)
         const resData = await res.json();
         setAnimeData(resData.data)
     }
@@ -51,7 +52,6 @@ function Anime()
     {
         document.title = "MFikriA  | Anime";
     });
-
     return (
         <>
             <br />
@@ -77,16 +77,15 @@ function Anime()
                             animeComponent={AddToList}
                             handleList={(anime) => addTo(anime)}
                         />
+                        <AnimeList
+                            animelist={myAnimeList}
+                            setAnimeInfo={setAnimeInfo}
+                            animeComponent={RemoveFromList}
+                            handleList={(anime) => removeFrom(anime)}
+                        />
                     </Row>
                 </Container>
-                {/* <div className="grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                    <AnimeList
-                        animelist={myAnimeList}
-                        setAnimeInfo={setAnimeInfo}
-                        animeComponent={RemoveFromList}
-                        handleList={(anime) => removeFrom(anime)}
-                    />
-                </div> */}
+
             </section>
         </>
     );
