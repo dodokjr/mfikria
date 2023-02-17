@@ -65,7 +65,7 @@ function About()
           <div>Github Following {profile.following}</div>
           <div>Github Followers {profile.followers}</div>
         </Row>
-        <div>
+        <div className="galery">
           <h1 className="">Galery</h1>
           <Row md={4} xs={1} className='g-4'>
             <Col md={4}>

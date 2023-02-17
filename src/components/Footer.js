@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import
 {
@@ -12,6 +12,22 @@ import { Link } from "react-router-dom";
 
 function Footer()
 {
+  const [items, setItems] = useState([])
+  const [url] = useState("https")
+  useEffect(() =>
+  {
+    const fetchRepos = async () =>
+    {
+      const res = await fetch(
+        'https://api-mfikria.vercel.app/media-url'
+      )
+      const data = await res.json()
+      setItems(data)
+    }
+
+    fetchRepos()
+  }, [url])
+
   let date = new Date();
   let year = date.getFullYear();
   return (
@@ -25,7 +41,7 @@ function Footer()
             <ul className="footer-icons">
               <li className="social-icons">
                 <a
-                  href="https://github.com/dodokjr/"
+                  href={items.github}
                   style={{ color: "white" }}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -35,7 +51,7 @@ function Footer()
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/muhammad-fikri-ardiyansah-952752194/"
+                  href={items.linkendi}
                   style={{ color: "white" }}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -45,7 +61,7 @@ function Footer()
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/fkri__17/"
+                  href={items.instagram}
                   style={{ color: "white" }}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -55,7 +71,7 @@ function Footer()
               </li>
               <li className="social-icons">
                 <a
-                  href="1066295352208142386"
+                  href={items.discord}
                   style={{ color: "white" }}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -65,7 +81,7 @@ function Footer()
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.youtube.com/channel/UCLP0I71nvbJ2D_Y5y-mwbEw"
+                  href={items.youtube}
                   style={{ color: "white" }}
                   target="_blank"
                   rel="noopener noreferrer"
