@@ -118,6 +118,18 @@ const UpdateList = () =>
                                 <Card.Footer className="text-muted">05 / 02 / 2023</Card.Footer>
                             </Card>
                         </Col>
+                        <Col md={4}>
+                            <Card className="text-center">
+                                <Card.Header>Update Featured</Card.Header>
+                                <Card.Body>
+                                    <Card.Title>Memperbarui Tampilan Anime Card</Card.Title>
+                                    <Card.Text>
+                                        Memperbarui
+                                    </Card.Text>
+                                </Card.Body>
+                                <Card.Footer className="text-muted">18 / 02 / 2023</Card.Footer>
+                            </Card>
+                        </Col>
                     </Row>
                     <hr />
                     <DatePeker />

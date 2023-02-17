@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import { Player } from 'video-react';
 import "video-react/dist/video-react.css";
-import Va from "../../Assets/Video/Official髭男dism  I LOVEOfficial Video_1080p.mp4"
+import Va from "../../Assets/Video/DJ Nirvana x Spin Back Slow Bass dj Tiktok Terbaru 2022_v240P.mp4"
 
 const Video = () =>
 {
@@ -17,7 +17,7 @@ const Video = () =>
                     playsInline
                     width={350}
                     poster="/assets/logo.png"
-                    src=""
+                    src={Va}
                 />
             </Container>
         </>

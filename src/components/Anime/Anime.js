@@ -68,7 +68,7 @@ function Anime()
                             />
                         </InputGroup>
                     </div>
-                    {animeInfo && <AnimeInfo animeInfo={animeInfo} />}
+                    {/* {animeInfo && <AnimeInfo animeInfo={animeInfo} />} */}
                     <hr />
                     <Row xs={1} md={2} className="g-4">
                         <AnimeList
