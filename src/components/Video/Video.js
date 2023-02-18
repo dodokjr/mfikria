@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import { Player } from 'video-react';
 import "video-react/dist/video-react.css";
+import Idol from "../../Assets/logo.png"
 import Va from "../../Assets/Video/DJ Nirvana x Spin Back Slow Bass dj Tiktok Terbaru 2022_v240P.mp4"
 
 const Video = () =>
@@ -16,7 +17,7 @@ const Video = () =>
                 <Player
                     playsInline
                     width={350}
-                    poster="/assets/logo.png"
+                    poster={Idol}
                     src={Va}
                 />
             </Container>

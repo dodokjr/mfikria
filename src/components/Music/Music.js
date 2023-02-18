@@ -11,7 +11,7 @@ function Music()
     const [currentMusicDetails, setCurrentMusicDetails] = useState({
         songName: 'Aku Kamu dan Samudra',
         songArtist: 'Rebellion Rose',
-        songSrc: './assets/Rebellion Rose  Aku Kamu dan Samudra Official Video Lirik.mp3',
+        songSrc: './assets/08.Rebellion Rose  Aku Kamu dan Samudra Official Video Lirik.mp3',
         songAvatar: './assets/logo.png'
     })
 
@@ -64,49 +64,61 @@ function Music()
         {
             songName: 'Rungkad',
             songArtist: 'Happy Asmara',
-            songSrc: './assets/02.RUNGKAD - HAPPY ASMARA ｜ 3PEMUDA BERBAHAYA FEAT SALLSA BINTAN COVER.mp3',
+            songSrc: './assets/01.RUNGKAD - HAPPY ASMARA ｜ 3PEMUDA BERBAHAYA FEAT SALLSA BINTAN COVER.mp3',
             songAvatar: './assets/logo.png'
         },
         {
             songName: 'KLEBUS',
             songArtist: 'NGATMOMBILUNG',
-            songSrc: './assets/03.KLEBUS - NGATMOMBILUNG ｜ 3PEMUDA BERBAHAYA FEAT SALLSA BINTAN COVER.mp3',
+            songSrc: './assets/02.KLEBUS - NGATMOMBILUNG ｜ 3PEMUDA BERBAHAYA FEAT SALLSA BINTAN COVER.mp3',
             songAvatar: './assets/logo.png'
         },
         {
             songName: 'ONLY',
             songArtist: 'Lee Hi',
-            songSrc: './assets/04.ONLY - Lee Hi (Melisa Hart ft. Roomate Project Cover) Live Session.mp3',
+            songSrc: './assets/03.ONLY - Lee Hi (Melisa Hart ft. Roomate Project Cover) Live Session.mp3',
             songAvatar: './assets/logo.png'
         },
         {
             songName: 'Momonon ',
             songArtist: 'KOPI HITAM',
-            songSrc: './assets/12.KOPI HITAM - Momonon - reggae ska cover by jovita aurel.mp3',
+            songSrc: './assets/04.KOPI HITAM - Momonon - reggae ska cover by jovita aurel.mp3',
             songAvatar: './assets/logo.png'
         },
         {
             songName: 'Cinta Itu Asu',
             songArtist: 'none',
-            songSrc: './assets/18.Cinta Itu Asu.mp3',
+            songSrc: './assets/05.Cinta Itu Asu.mp3',
             songAvatar: './assets/logo.png'
         },
         {
             songName: 'Rasah Bali',
             songArtist: ' LAVORA Ft Ena Vika',
-            songSrc: './assets/Rasah Bali  LAVORA Ft Ena Vika Official Music Video DWILOGI EPS 2.mp3',
+            songSrc: './assets/06.RagnBone Man  Human Official Video.mp3',
             songAvatar: './assets/logo.png'
         },
         {
             songName: 'Human',
             songArtist: 'RagnBone Man',
-            songSrc: './assets/RagnBone Man  Human Official Video.mp3',
+            songSrc: './assets/07.Rasah Bali  LAVORA Ft Ena Vika Official Music Video DWILOGI EPS 2.mp3',
             songAvatar: './assets/logo.png'
         },
         {
             songName: 'Aku Kamu dan Samudra',
             songArtist: 'Rebellion Rose',
-            songSrc: './assets/Rebellion Rose  Aku Kamu dan Samudra Official Video Lirik.mp3',
+            songSrc: './assets/08.Rebellion Rose  Aku Kamu dan Samudra Official Video Lirik.mp3',
+            songAvatar: './assets/logo.png'
+        },
+        {
+            songName: 'Stand Hero Alone',
+            songArtist: 'Kita Lawan Mereka',
+            songSrc: './assets/09.Kita Lawan Mereka.mp3',
+            songAvatar: './assets/logo.png'
+        },
+        {
+            songName: 'Stand Hero Alone',
+            songArtist: 'Wanita Masih Banyak',
+            songSrc: './assets/10.Wanita Masih Banyak.mp3',
             songAvatar: './assets/logo.png'
         }
     ]
@@ -174,7 +186,7 @@ function Music()
     }
 
 
-    const vidArray = ['./assets/A E S T H E T I C  ( Anime Visuals ).f243.webm'];
+    const vidArray = ['./assets/Aesthetic anime cooking ramen with sound effects.mp4'];
 
     const handleChangeBackground = () =>
     {

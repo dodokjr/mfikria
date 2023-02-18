@@ -58,7 +58,6 @@ function App()
     });
   }, []);
 
-
   //crypto
   const [coins, setCoins] = useState([]);
   const api = "https://api-mfikria.vercel.app/v3/"
