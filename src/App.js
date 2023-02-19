@@ -13,6 +13,7 @@ import UpdateList from "./components/UpdateList";
 import Calculator from "./components/ProjectGabut/Calculator/Calculator";
 import Coin from "./components/ProjectGabut/Crypto/Coin";
 import Coins from "./components/ProjectGabut/Crypto/Coins";
+import Gallery from './components/Gallery/Gallery';
 import
 {
   BrowserRouter as Router,
@@ -101,6 +102,7 @@ function App()
           <Route path="/projectgabut/coin" element={<Coins coins={coins} />}>
             <Route path=':coinId' element={<Coin />} />
           </Route>
+          {/* <Route path="/projectgabut/gallery" element={<Gallery />} /> */}
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
