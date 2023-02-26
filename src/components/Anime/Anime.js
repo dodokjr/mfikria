@@ -38,7 +38,7 @@ function Anime()
     }
     const getData = async () =>
     {
-        const res = await fetch(`https://api-mfikria.vercel.app/v2/${search}`)
+        const res = await fetch(`https://api-mfikria.vercel.app/v2/anime/${search}`)
         const resData = await res.json();
         setAnimeData(resData.data)
     }

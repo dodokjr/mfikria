@@ -19,7 +19,7 @@ function Footer()
     const fetchRepos = async () =>
     {
       const res = await fetch(
-        'https://api-mfikria.vercel.app/media-url'
+        'https://api-mfikria.vercel.app/link/'
       )
       const data = await res.json()
       setItems(data)
@@ -51,7 +51,7 @@ function Footer()
               </li>
               <li className="social-icons">
                 <a
-                  href={items.linkendi}
+                  href={items.linkedin}
                   style={{ color: "white" }}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -69,7 +69,7 @@ function Footer()
                   <AiFillInstagram />
                 </a>
               </li>
-              <li className="social-icons">
+              <li className="social-icons" >
                 <a
                   href={items.discord}
                   style={{ color: "white" }}

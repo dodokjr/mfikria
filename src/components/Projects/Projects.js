@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 // import Particle from "../Particle";
 import DodokStore from "../../Assets/Projects/DodokStore.png";
+import Gabut from "../../Assets/Projects/gabut.png"
 import GithubApi from "./GithubApi/GithubApi";
 
 
@@ -34,6 +35,16 @@ function Projects()
                 description="Store Project with Html Css Javascript"
                 ghLink="https://github.com/dodokjr/dodok-store"
                 demoLink="https://dodokvapestore.netlify.app/"
+              />
+            </Col>
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={Gabut}
+                isBlog={false}
+                title="Token And Password Random"
+                description="Project with Html Css Javascript"
+                ghLink="https://github.com/dodokjr/gabut-1"
+                demoLink="https://gabut-1.vercel.app/"
               />
             </Col>
           </Row>

@@ -1,6 +1,6 @@
 import React from "react"
 import { format } from "date-fns"
-import Card from "react-bootstrap/Card";
+import { Card, Button } from "react-bootstrap";
 import { RiStarSFill, RiGithubFill } from "react-icons/ri";
 import { HiOutlineEye } from "react-icons/hi";
 import { IoIosGitNetwork } from "react-icons/io";
@@ -35,7 +35,10 @@ export default function Profile(props)
           </Card.Text>
         </Card.Body>
         <Card.Body>
-          <Card.Link href={props.html_url} target="_blank"><RiGithubFill className="fs-2" /></Card.Link>
+          <Button variant="primary" href={props.html_url} target="_blank">
+            <RiGithubFill className="fs-2" /> &nbsp;
+            {props.name}
+          </Button>
         </Card.Body>
         <Card.Footer>
           <div className="fs-7">Last Update : {format(new Date(props.updated_at), "dd MMMM yyyy")}</div>

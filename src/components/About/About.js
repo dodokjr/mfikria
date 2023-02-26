@@ -22,7 +22,7 @@ function About()
     const fetchProfile = async () =>
     {
       const res = await fetch(
-        `https://api-mfikria.vercel.app/v1/${user}`
+        `https://api-mfikria.vercel.app/v2/github/${user}`
       )
       const data = await res.json()
       setProfile(data)
