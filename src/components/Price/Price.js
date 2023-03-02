@@ -42,7 +42,7 @@ const Price = () =>
                                         <ListGroup className="list-group-flush">
                                             <ListGroup.Item>Data Analist</ListGroup.Item>
                                             <ListGroup.Item>Frontend and Backend</ListGroup.Item>
-                                            <ListGroup.Item>Full Matenis Maintenance</ListGroup.Item>
+                                            <ListGroup.Item>Full Maintenance</ListGroup.Item>
                                         </ListGroup>
                                     </Card.Text>
 
@@ -59,7 +59,7 @@ const Price = () =>
                                         <ListGroup className="list-group-flush">
                                             <ListGroup.Item>Data Analist</ListGroup.Item>
                                             <ListGroup.Item>Frontend and Backend</ListGroup.Item>
-                                            <ListGroup.Item>Full Matenis Maintenance</ListGroup.Item>
+                                            <ListGroup.Item>Full  Maintenance</ListGroup.Item>
                                             <ListGroup.Item>Full Language Code</ListGroup.Item>
                                         </ListGroup>
                                     </Card.Text>

@@ -10,11 +10,11 @@ import Milly from "../../Assets/milly-anime.gif";
 import Shikimori from "../../Assets/shiki-mori-shikimoris-not-just-cute.gif"
 import Toolstack from "./Toolstack";
 import ProfileGithub from "./ProfileGithub";
+import Galery from "./Galery";
 
 function About()
 {
   const [profile, setProfile] = useState([])
-  // Change this to any username whose repositories you want to get
   const [user] = useState("dodokjr")
 
   useEffect(() =>
@@ -66,18 +66,8 @@ function About()
           <div>Github Followers {profile.followers}</div>
         </Row>
         <div className="galery">
-          <h1 className="">Galery</h1>
-          <Row md={4} xs={1} className='g-4'>
-            <Col md={4}>
-              <img src={Me} alt={profile.name} width={190} className="img-fluid" />
-            </Col>
-            <Col md={4}>
-              <img src={Milly} alt='Wibu berkelas' width={190} className='img-fluid' />
-            </Col>
-            <Col md={4}>
-              <img src={Shikimori} alt='Wibu berkelas' width={190} className='img-fluid' />
-            </Col>
-          </Row>
+          <h1 className="">Galery {user}</h1>
+          <Galery />
         </div>
         {/* Tool And Stack */}
         <h1 className="project-heading">

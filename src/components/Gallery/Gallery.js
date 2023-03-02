@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Row, Col, Card, Container } from 'react-bootstrap'
+import { Row, Col, Card, Container, CardGroup } from 'react-bootstrap'
 
 const Gallery = () =>
 {
@@ -29,39 +29,53 @@ const Gallery = () =>
                     </h1>
                     <hr />
                     <Row xs={1} md={2} className="g-4">
-                         <Col md={4}>
-                              <Card>
-                                   <Card.Img variant="top" src='https://i.pinimg.com/736x/00/a7/19/00a7190504eea461bbce8c3b5c12dd41.jpg' width={90} />
-                                   <Card.Body>
-                                        <Card.Title>{items.data.One.title}</Card.Title>
-                                        <Card.Text>
-                                             {items.data.One.des}
-                                        </Card.Text>
-                                   </Card.Body>
-                              </Card>
-                         </Col>
-                         <Col md={4}>
-                              <Card>
-                                   <Card.Img variant="top" src='https://i.pinimg.com/236x/d3/7b/d0/d37bd0f69a5ff9ca11351691d42a416e.jpg' width={90} />
-                                   <Card.Body>
-                                        <Card.Title>{items.data.Two.title}</Card.Title>
-                                        <Card.Text>
-                                             {items.data.Two.des}
-                                        </Card.Text>
-                                   </Card.Body>
-                              </Card>
-                         </Col>
-                         <Col md={4}>
-                              <Card>
-                                   <Card.Img variant="top" src='https://i.pinimg.com/236x/46/63/c1/4663c1a34ec2c158551d6c85c5e7bb87.jpg' width={90} />
-                                   <Card.Body>
-                                        <Card.Title>{items.data.Three.title}</Card.Title>
-                                        <Card.Text>
-                                             {items.data.Three.des}
-                                        </Card.Text>
-                                   </Card.Body>
-                              </Card>
-                         </Col>
+                         <CardGroup>
+                              <Col md={4}>
+                                   <Card>
+                                        <Card.Img variant="top" src="https://i.pinimg.com/736x/00/a7/19/00a7190504eea461bbce8c3b5c12dd41.jpg" />
+                                        <Card.Body>
+                                             <Card.Title>Card title</Card.Title>
+                                             <Card.Text>
+                                                  This is a wider card with supporting text below as a natural lead-in
+                                                  to additional content. This content is a little bit longer.
+                                             </Card.Text>
+                                        </Card.Body>
+                                        <Card.Footer>
+                                             <small className="text-muted">Last updated 3 mins ago</small>
+                                        </Card.Footer>
+                                   </Card>
+                              </Col>
+                              <Col md={4}>
+                                   <Card>
+                                        <Card.Img variant="top" src="https://i.pinimg.com/236x/d3/7b/d0/d37bd0f69a5ff9ca11351691d42a416e.jpg" />
+                                        <Card.Body>
+                                             <Card.Title>Card title</Card.Title>
+                                             <Card.Text>
+                                                  This is a wider card with supporting text below as a natural lead-in
+                                                  to additional content. This content is a little bit longer.
+                                             </Card.Text>
+                                        </Card.Body>
+                                        <Card.Footer>
+                                             <small className="text-muted">Last updated 3 mins ago</small>
+                                        </Card.Footer>
+                                   </Card>
+                              </Col>
+                              <Col md={4}>
+                                   <Card>
+                                        <Card.Img variant="top" src="https://i.pinimg.com/236x/46/63/c1/4663c1a34ec2c158551d6c85c5e7bb87.jpg" />
+                                        <Card.Body>
+                                             <Card.Title>Card title</Card.Title>
+                                             <Card.Text>
+                                                  This is a wider card with supporting text below as a natural lead-in
+                                                  to additional content. This content is a little bit longer.
+                                             </Card.Text>
+                                        </Card.Body>
+                                        <Card.Footer>
+                                             <small className="text-muted">Last updated 3 mins ago</small>
+                                        </Card.Footer>
+                                   </Card>
+                              </Col>
+                         </CardGroup>
                     </Row>
                </Container>
           </Container>
