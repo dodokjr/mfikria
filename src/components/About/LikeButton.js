@@ -22,7 +22,7 @@ const LikeButton = () =>
 
      return (
           <div className='class="button"'>
-               <Button variant='primary' className={`like-button ${isClicked && 'liked'}`} onClick={handleClick}><i className='fa fa-like'></i>{` ${likes}`}</Button>
+               <Button variant='primary' className={`like-button ${isClicked && 'liked'}`} onClick={handleClick}><i className='fa fa-heart'></i>{` ${likes}`}</Button>
           </div>
      );
 };

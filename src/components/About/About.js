@@ -5,9 +5,6 @@ import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
-import Me from "../../Assets/me.webp";
-import Milly from "../../Assets/milly-anime.gif";
-import Shikimori from "../../Assets/shiki-mori-shikimoris-not-just-cute.gif"
 import Toolstack from "./Toolstack";
 import ProfileGithub from "./ProfileGithub";
 import Galery from "./Galery";

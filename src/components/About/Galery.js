@@ -1,6 +1,9 @@
 import { React, useState } from "react";
 import { Col, CardGroup, Card, Row } from "react-bootstrap";
 import LikeButton from "./LikeButton";
+import Me from "../../Assets/me.webp";
+import Milly from "../../Assets/milly-anime.gif";
+import Shikimori from "../../Assets/shiki-mori-shikimoris-not-just-cute.gif"
 
 const Galery = () =>
 {
@@ -9,7 +12,7 @@ const Galery = () =>
                <CardGroup>
                     <Col md={4}>
                          <Card className="project-card-view">
-                              <Card.Img variant="top" src="https://i.pinimg.com/736x/00/a7/19/00a7190504eea461bbce8c3b5c12dd41.jpg" />
+                              <Card.Img variant="top" src={Me} />
                               <Card.Body>
                                    <Card.Title>1</Card.Title>
                                    <Card.Text>
@@ -18,13 +21,13 @@ const Galery = () =>
                                    <LikeButton />
                               </Card.Body>
                               <Card.Footer>
-                                   <small className="text-muted">Last updated 3 mins ago</small>
+                                   <small className="text-muted"></small>
                               </Card.Footer>
                          </Card>
                     </Col>
                     <Col md={4}>
                          <Card className="project-card-view">
-                              <Card.Img variant="top" src="https://i.pinimg.com/236x/d3/7b/d0/d37bd0f69a5ff9ca11351691d42a416e.jpg" />
+                              <Card.Img variant="top" src={Milly} />
                               <Card.Body>
                                    <Card.Title>2</Card.Title>
                                    <Card.Text>
@@ -33,13 +36,13 @@ const Galery = () =>
                                    <LikeButton />
                               </Card.Body>
                               <Card.Footer>
-                                   <small className="text-muted">Last updated 3 mins ago</small>
+                                   <small className="text-muted"></small>
                               </Card.Footer>
                          </Card>
                     </Col>
                     <Col md={4}>
                          <Card className="project-card-view">
-                              <Card.Img variant="top" src="https://i.pinimg.com/236x/46/63/c1/4663c1a34ec2c158551d6c85c5e7bb87.jpg" />
+                              <Card.Img variant="top" src={Shikimori} />
                               <Card.Body>
                                    <Card.Title>3</Card.Title>
                                    <Card.Text>
@@ -48,7 +51,7 @@ const Galery = () =>
                                    <LikeButton />
                               </Card.Body>
                               <Card.Footer>
-                                   <small className="text-muted">Last updated 3 mins ago</small>
+                                   <small className="text-muted"></small>
                               </Card.Footer>
                          </Card>
                     </Col>

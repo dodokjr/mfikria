@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 function Anime()
 {
-    const [search, setSearch] = useState('e')
+    const [search, setSearch] = useState('c')
     const [animeData, setAnimeData] = useState([]);
     const [animeInfo, setAnimeInfo] = useState();
     const [myAnimeList, setMyAnimeList] = useState([]);
