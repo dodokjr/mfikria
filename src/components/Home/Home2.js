@@ -1,18 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import
-  {
-    AiFillGithub,
-    AiOutlineTwitter,
-    AiFillInstagram,
-  } from "react-icons/ai";
+{
+  AiFillGithub,
+  AiOutlineTwitter,
+  AiFillInstagram,
+  AiFillEye
+} from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import Contact from "../Contact";
 
 function Home2()
 {
+
+  const [count, setCount] = useState(0);
+  useEffect(() =>
+  {
+    var pageView = sessionStorage.getItem("pageView");
+    if (pageView == null)
+    {
+      pageView = 1;
+    } else
+    {
+      pageView = Number(pageView) + 1;
+    }
+    sessionStorage.setItem("pageView", pageView);
+    setCount(pageView);
+  }, []);
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -58,6 +74,9 @@ function Home2()
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
+        </Row>
+        <Row>
+          <div className="blue">View In Website <AiFillEye /> {count} Live</div>
         </Row>
         <Row>
           <Col md={12} className="home-about-social">

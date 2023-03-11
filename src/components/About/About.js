@@ -8,6 +8,7 @@ import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 import ProfileGithub from "./ProfileGithub";
 import Galery from "./Galery";
+import { AiFillEye } from 'react-icons/ai'
 
 function About()
 {
@@ -32,7 +33,6 @@ function About()
   {
     document.title = "MFikriA  | About";
   });
-
   return (
     <Container fluid className="about-section">
       {/* <Particle /> */}

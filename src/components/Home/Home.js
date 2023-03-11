@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Anime from "../../Assets/giphy1.gif"
@@ -12,6 +12,7 @@ function Home()
   {
     document.title = "MFikriA  | Home";
   });
+
 
   return (
     <section>
