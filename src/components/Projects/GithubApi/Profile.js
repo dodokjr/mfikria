@@ -39,6 +39,11 @@ export default function Profile(props)
             <RiGithubFill className="fs-2" /> &nbsp;
             {props.name}
           </Button>
+          <br />
+          <a href={props.homepage} target="_blank">
+            &nbsp;
+            {props.homepage}
+          </a>
         </Card.Body>
         <Card.Footer>
           <div className="fs-7">Last Update : {format(new Date(props.updated_at), "dd MMMM yyyy")}</div>

@@ -19,7 +19,6 @@ import
   BrowserRouter as Router,
   Route,
   Routes,
-  Navigate
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop"
 import "./style.css";
@@ -82,6 +81,7 @@ function App()
       behavior: 'smooth' // for smoothly scrolling
     });
   };
+
 
   return (
     <Router>
