@@ -21,11 +21,11 @@ const Contact = () =>
       .then(
         (result) =>
         {
-          console.log(result.text);
+          console.log('Terkirim');
         },
         (error) =>
         {
-          console.log(error.text);
+          console.log('Terjadi masalah mohon coba lagi');
         }
       );
 
