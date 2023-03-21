@@ -7,7 +7,7 @@ import
   AiFillInstagram,
   AiFillYoutube,
 } from "react-icons/ai";
-import { FaLinkedinIn, FaDiscord } from "react-icons/fa";
+import { FaLinkedinIn, FaDiscord, FaSteam } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function Footer()
@@ -87,6 +87,16 @@ function Footer()
                   rel="noopener noreferrer"
                 >
                   <AiFillYoutube />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href={items.steam}
+                  style={{ color: "white" }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaSteam />
                 </a>
               </li>
             </ul>

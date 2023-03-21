@@ -190,20 +190,19 @@ function Music()
 
     const handleChangeBackground = () =>
     {
-        if (videoIndex >= vidArray.length - 1)
+        if (videoIndex >= vidArray.length + 1)
         {
             setVideoIndex(0);
         } else
         {
-            setVideoIndex(videoIndex + 1)
+            setVideoIndex(videoIndex - 1)
         }
     }
-
 
     return (
         <>
             <div className="containerr music">
-                <audio src='#' ref={currentAudio} onEnded={handleNextSong} onTimeUpdate={handleAudioUpdate}></audio>
+                <audio src='/' ref={currentAudio} onEnded={handleNextSong} onTimeUpdate={handleAudioUpdate}></audio>
                 <video src={vidArray[videoIndex]} loop muted autoPlay className='backgroundVideo'></video>
                 <div className="blackScreen"></div>
                 <div className="music-Container">

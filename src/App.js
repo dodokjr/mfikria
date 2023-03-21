@@ -14,6 +14,7 @@ import Calculator from "./components/ProjectGabut/Calculator/Calculator";
 import Coin from "./components/ProjectGabut/Crypto/Coin";
 import Coins from "./components/ProjectGabut/Crypto/Coins";
 import Gallery from './components/Gallery/Gallery';
+import Contact from "./components/Contact";
 import
 {
   BrowserRouter as Router,
@@ -60,7 +61,7 @@ function App()
 
   //crypto
   const [coins, setCoins] = useState([]);
-  const api = "https://api-mfikria.vercel.app/v2/crypto"
+  const api = "http://localhost:5000/v2/crypto"
 
   useEffect(() =>
   {
@@ -96,7 +97,7 @@ function App()
           <Route path="/price" element={<Price />} />
           <Route path="/anime" element={<Anime />} />
           <Route path="/music" element={<Music />} />
-          <Route path="/video" element={<Video />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/updatelist" element={<UpdateList />} />
           <Route path="/projectgabut/calculator" element={<Calculator />} />
           <Route path="/projectgabut/coin" element={<Coins coins={coins} />}>
