@@ -27,6 +27,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { HiArrowUp } from "react-icons/hi";
 import axios from "axios";
 import NotFound from "./components/NotFound";
+import NoInternetConnection from "./components/NoInternetConnection";
 
 function App()
 {
@@ -61,8 +62,7 @@ function App()
 
   //crypto
   const [coins, setCoins] = useState([]);
-  const api = "http://localhost:5000/v2/crypto"
-
+  const api = "https://api-mfikria.vercel.app/v2/crypto"
   useEffect(() =>
   {
     axios.get(api).then((response) =>
@@ -85,36 +85,38 @@ function App()
 
 
   return (
-    <Router>
-      <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/price" element={<Price />} />
-          <Route path="/anime" element={<Anime />} />
-          <Route path="/music" element={<Music />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/updatelist" element={<UpdateList />} />
-          <Route path="/projectgabut/calculator" element={<Calculator />} />
-          <Route path="/projectgabut/coin" element={<Coins coins={coins} />}>
-            <Route path=':coinId' element={<Coin />} />
-          </Route>
-          {/* <Route path="/projectgabut/gallery" element={<Gallery />} /> */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <Footer />
+    <NoInternetConnection>
+      <Router>
+        <Preloader load={load} />
+        <div className="App" id={load ? "no-scroll" : "scroll"}>
+          <Navbar />
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/project" element={<Projects />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/price" element={<Price />} />
+            <Route path="/anime" element={<Anime />} />
+            <Route path="/music" element={<Music />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/updatelist" element={<UpdateList />} />
+            <Route path="/projectgabut/calculator" element={<Calculator />} />
+            <Route path="/projectgabut/coin" element={<Coins coins={coins} />}>
+              <Route path=':coinId' element={<Coin />} />
+            </Route>
+            {/* <Route path="/projectgabut/gallery" element={<Gallery />} /> */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          <Footer />
 
-        {showButton && (
-          <button onClick={scrollToTop} className="back-to-top btn btn-light btn-floating btn-lg">
-            <HiArrowUp />
-          </button>
-        )}
-      </div>
-    </Router>
+          {showButton && (
+            <button onClick={scrollToTop} className="back-to-top btn btn-light btn-floating btn-lg">
+              <HiArrowUp />
+            </button>
+          )}
+        </div>
+      </Router>
+    </NoInternetConnection>
   );
 }
 

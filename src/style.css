@@ -1,22 +1,22 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
+    rgba(11, 10, 27, 0.674),
+    rgba(13, 10, 42, 0.612)
   );
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
+    rgba(11, 10, 27, 0.674),
+    rgba(13, 10, 42, 0.612)
   );
 
-  --imp-text-color: #3037fb;
+  --imp-text-color: #060efa;
 }
 
-body{
-  background-image:  url(./Assets/Background.png) !important;
-}
+/* body{
+  background-image:  url(./Assets/) !important;
+} */
 
 
 .blue {
@@ -31,7 +31,7 @@ button:focus {
   color: #fff;
 }
 
-.black{
+  .black{
   color: #000;
 }
 
@@ -56,8 +56,8 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #000000;
-  background-image: url(./Assets/loder.svg);
+  background-color: #020105ac;
+  background-image: url(./Assets/wifi.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -100,7 +100,7 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: #0f0d358c !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -859,10 +859,11 @@ textarea {
   bottom: 20px;
   right: 20px;
   display: none;
+  background-color: #2330e3;
 }
 
 .back-to-top:hover{
-  background: #2330e3;
+  background: #1c215d;
 }
 
 .update {
@@ -877,6 +878,7 @@ textarea {
   position: relative !important;
 }
 
+
 .p404 {
   position: relative !important;
   align-items: center !important;
@@ -888,8 +890,6 @@ textarea {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: url(./Assets/Background.png), var(--image-gradient) !important;
-  color: rgb(0, 0, 0) !important;
 }
 
 .anime {
@@ -897,7 +897,12 @@ textarea {
 padding-top: 150px !important;
 padding-bottom: 30px !important;
 background-image: var(--section-background-color) !important;
-color: rgb(0, 0, 0) !important;
+}
+
+.text-black{
+  color: #000;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .mylist{
@@ -914,10 +919,10 @@ color: rgb(0, 0, 0) !important;
 
 .music {
   position: relative !important;
-padding-top: 150px !important;
-padding-bottom: 30px !important;
+padding-top: 90px !important;
+padding-bottom: 20px !important;
 background-image: var(--section-background-color) !important;
-color: rgb(255, 246, 246) !important;
+overflow: hidden;
 }
 
 .time {

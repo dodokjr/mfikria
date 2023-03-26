@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-
+import Logo from '../Assets/logo.png'
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { BsListNested } from "react-icons/bs";
@@ -46,7 +46,8 @@ function NavBar()
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <h1>MFikriA</h1>
+          <img src={Logo} alt="logo" width={55} height={40} />
+          <h1>FikriA</h1>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
