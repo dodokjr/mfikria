@@ -18,6 +18,7 @@
     "react-dom": "^18.2.0",
     "react-github-calendar": "^3.4.0",
     "react-icons": "^4.3.1",
+    "react-internet-meter": "^1.1.1",
     "react-parallax-tilt": "^1.7.88",
     "react-pdf": "^5.7.1",
     "react-router-dom": "^6.6.2",

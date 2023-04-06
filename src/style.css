@@ -46,6 +46,11 @@ button:focus {
 .blue{
   color: #060efa;
 }
+
+.text-speed {
+  color: #ffff;
+  text-align: center;
+}
 /* --------- */
 /*  Preloader */
 /* --------- */
