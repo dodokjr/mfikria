@@ -9,4 +9,3 @@ Salam Kaum Turu
 
 Steam : hokage_813
 
-#TuruDeks
