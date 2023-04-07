@@ -28,7 +28,6 @@ import { HiArrowUp } from "react-icons/hi";
 import axios from "axios";
 import NotFound from "./components/NotFound";
 import NoInternetConnection from "./components/NoInternetConnection";
-import InternetSpeed from "./components/InternetSpeed";
 
 function App()
 {
@@ -108,7 +107,6 @@ function App()
             {/* <Route path="/projectgabut/gallery" element={<Gallery />} /> */}
             <Route path="*" element={<NotFound />} />
           </Routes>
-          <InternetSpeed />
           <Footer />
 
           {showButton && (

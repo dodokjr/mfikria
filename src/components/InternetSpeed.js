@@ -16,7 +16,7 @@ const InternetSpeed = () =>
                 txtMainHeading="Opps..."
                 thresholdUnit="megabyte" // "byte" , "kilobyte", "megabyte"
                 threshold={50}
-                imageUrl="https://mfikria.netlify.app/logo.png"
+                imageUrl="https://api-mfikria.vercel.app/public/logo.ico"
                 downloadSize="1561257" //bytes
                 callbackFunctionOnNetworkDown={(data) =>
                     document.getElementById('net').innerHTML = data

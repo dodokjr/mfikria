@@ -102,17 +102,6 @@ function NavBar()
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/anime"
-                onClick={() => updateExpanded(false)}
-              >
-                <BsListNested style={{ marginBottom: "2px" }} /> Anime
-              </Nav.Link>
-            </Nav.Item>
-
-
             <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/dodokjr"

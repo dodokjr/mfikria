@@ -7,7 +7,6 @@ import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 import ProfileGithub from "./ProfileGithub";
-import Galery from "./Galery";
 import { AiFillEye } from 'react-icons/ai'
 
 function About()
@@ -62,10 +61,6 @@ function About()
           <div>Github Following {profile.following}</div>
           <div>Github Followers {profile.followers}</div>
         </Row>
-        <div className="galery">
-          <h1 className="">Galery {user}</h1>
-          <Galery />
-        </div>
         {/* Tool And Stack */}
         <h1 className="project-heading">
           Professional <strong className="purple">Skillset </strong>

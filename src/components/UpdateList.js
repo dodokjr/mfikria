@@ -130,6 +130,18 @@ const UpdateList = () =>
                                 <Card.Footer className="text-muted">18 / 02 / 2023</Card.Footer>
                             </Card>
                         </Col>
+                        <Col md={4}>
+                            <Card className="text-center">
+                                <Card.Header>Update Featured</Card.Header>
+                                <Card.Body>
+                                    <Card.Title>Url Menghilang dan berkurangnya lagu</Card.Title>
+                                    <Card.Text>
+                                        Memperbarui url <Link to='/anime'>#Anime</Link>
+                                    </Card.Text>
+                                </Card.Body>
+                                <Card.Footer className="text-muted">07 / 04 / 2023</Card.Footer>
+                            </Card>
+                        </Col>
                     </Row>
                     <hr />
                     <DatePeker />

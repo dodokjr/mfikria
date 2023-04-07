@@ -62,45 +62,15 @@ function Music()
 
     const musicAPI = [
         {
-            songName: 'Rungkad',
-            songArtist: 'Happy Asmara',
-            songSrc: './assets/01.RUNGKAD - HAPPY ASMARA ｜ 3PEMUDA BERBAHAYA FEAT SALLSA BINTAN COVER.mp3',
-            songAvatar: './assets/logo.png'
-        },
-        {
-            songName: 'KLEBUS',
-            songArtist: 'NGATMOMBILUNG',
-            songSrc: './assets/02.KLEBUS - NGATMOMBILUNG ｜ 3PEMUDA BERBAHAYA FEAT SALLSA BINTAN COVER.mp3',
-            songAvatar: './assets/logo.png'
-        },
-        {
             songName: 'ONLY',
             songArtist: 'Lee Hi',
             songSrc: './assets/03.ONLY - Lee Hi (Melisa Hart ft. Roomate Project Cover) Live Session.mp3',
             songAvatar: './assets/logo.png'
         },
         {
-            songName: 'Momonon ',
-            songArtist: 'KOPI HITAM',
-            songSrc: './assets/04.KOPI HITAM - Momonon - reggae ska cover by jovita aurel.mp3',
-            songAvatar: './assets/logo.png'
-        },
-        {
             songName: 'Cinta Itu Asu',
             songArtist: 'none',
             songSrc: './assets/05.Cinta Itu Asu.mp3',
-            songAvatar: './assets/logo.png'
-        },
-        {
-            songName: 'Rasah Bali',
-            songArtist: ' LAVORA Ft Ena Vika',
-            songSrc: './assets/06.RagnBone Man  Human Official Video.mp3',
-            songAvatar: './assets/logo.png'
-        },
-        {
-            songName: 'Human',
-            songArtist: 'RagnBone Man',
-            songSrc: './assets/07.Rasah Bali  LAVORA Ft Ena Vika Official Music Video DWILOGI EPS 2.mp3',
             songAvatar: './assets/logo.png'
         },
         {
@@ -119,6 +89,12 @@ function Music()
             songName: 'Stand Hero Alone',
             songArtist: 'Wanita Masih Banyak',
             songSrc: './assets/10.Wanita Masih Banyak.mp3',
+            songAvatar: './assets/logo.png'
+        },
+        {
+            songName: 'Spesial',
+            songArtist: 'kat',
+            songSrc: './assets/kat.mp3',
             songAvatar: './assets/logo.png'
         }
     ]
