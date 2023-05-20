@@ -142,6 +142,18 @@ const UpdateList = () =>
                                 <Card.Footer className="text-muted">07 / 04 / 2023</Card.Footer>
                             </Card>
                         </Col>
+                        <Col md={4}>
+                            <Card className="text-center">
+                                <Card.Header>Update Featured</Card.Header>
+                                <Card.Body>
+                                    <Card.Title>Seacrh</Card.Title>
+                                    <Card.Text>
+                                        add url <Link to='/projectgabut/Seacrh'>#Seacrh Google</Link>
+                                    </Card.Text>
+                                </Card.Body>
+                                <Card.Footer className="text-muted">07 / 04 / 2023</Card.Footer>
+                            </Card>
+                        </Col>
                     </Row>
                     <hr />
                     <DatePeker />

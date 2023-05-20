@@ -6,8 +6,8 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Price from "./components/Price/Price";
-import Anime from "./components/Anime/Anime";
-import Music from "./components/Music/Music";
+import Anime from "./components/ProjectGabut/Anime/Anime";
+import Music from "./components/ProjectGabut/Music/Music";
 import Video from "./components/Video/Video";
 import UpdateList from "./components/UpdateList";
 import Calculator from "./components/ProjectGabut/Calculator/Calculator";
@@ -15,6 +15,7 @@ import Coin from "./components/ProjectGabut/Crypto/Coin";
 import Coins from "./components/ProjectGabut/Crypto/Coins";
 import Gallery from './components/Gallery/Gallery';
 import Contact from "./components/Contact";
+import Seacrh from "./components/ProjectGabut/Seacrh/Seacrh";
 import
 {
   BrowserRouter as Router,

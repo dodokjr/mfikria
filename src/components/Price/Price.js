@@ -1,6 +1,7 @@
 import { React, useEffect } from "react";
 import { Container, Row, Card, Col, ListGroup } from "react-bootstrap";
 import Contact from "../Contact";
+import Cv from "./Cv";
 
 const Price = () =>
 {
@@ -13,8 +14,9 @@ const Price = () =>
             <Container fluid className="price">
                 <Container>
                     <h1 className="project-heading">
-                        My Price
+                        My Price And Cv
                     </h1>
+                    <Cv />
                     <hr />
                     <Row xs={1} md={3} className="g-4">
                         <Col md={4}>
