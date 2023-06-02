@@ -7,6 +7,7 @@ import { ModalAnime } from "./ModalAnime";
 import { FiSearch } from "react-icons/fi";
 import { Container, Row, Col, Button, Form, InputGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { HiArrowUp } from "react-icons/hi";
 import axios from "axios";
 function Anime()
 {
@@ -47,6 +48,21 @@ function Anime()
         getData()
     }, [search])
 
+    const [showButton, setShowButton] = useState(false);
+
+    useEffect(() =>
+    {
+        window.addEventListener("scroll", () =>
+        {
+            if (window.pageYOffset > 20)
+            {
+                setShowButton(true);
+            } else
+            {
+                setShowButton(false);
+            }
+        });
+    }, []);
 
     useEffect(() =>
     {
@@ -85,7 +101,6 @@ function Anime()
                         />
                     </Row>
                 </Container>
-
             </section>
         </>
     );

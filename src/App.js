@@ -25,7 +25,6 @@ import
 import ScrollToTop from "./components/ScrollToTop"
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { HiArrowUp } from "react-icons/hi";
 import axios from "axios";
 import NotFound from "./components/NotFound";
 import NoInternetConnection from "./components/NoInternetConnection";
@@ -45,21 +44,7 @@ function App()
   }, []);
 
 
-  const [showButton, setShowButton] = useState(false);
 
-  useEffect(() =>
-  {
-    window.addEventListener("scroll", () =>
-    {
-      if (window.pageYOffset > 20)
-      {
-        setShowButton(true);
-      } else
-      {
-        setShowButton(false);
-      }
-    });
-  }, []);
 
   //crypto
   const [coins, setCoins] = useState([]);
@@ -110,11 +95,6 @@ function App()
           </Routes>
           <Footer />
 
-          {showButton && (
-            <button onClick={scrollToTop} className="back-to-top btn btn-light btn-floating btn-lg">
-              <HiArrowUp />
-            </button>
-          )}
         </div>
       </Router>
     </NoInternetConnection>
