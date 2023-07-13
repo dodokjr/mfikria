@@ -6,16 +6,8 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Price from "./components/Price/Price";
-import Anime from "./components/ProjectGabut/Anime/Anime";
-import Music from "./components/ProjectGabut/Music/Music";
-import Video from "./components/Video/Video";
 import UpdateList from "./components/UpdateList";
-import Calculator from "./components/ProjectGabut/Calculator/Calculator";
-import Coin from "./components/ProjectGabut/Crypto/Coin";
-import Coins from "./components/ProjectGabut/Crypto/Coins";
-import Gallery from './components/Gallery/Gallery';
 import Contact from "./components/Contact";
-import Seacrh from "./components/ProjectGabut/Seacrh/Seacrh";
 import
 {
   BrowserRouter as Router,
@@ -44,22 +36,6 @@ function App()
   }, []);
 
 
-
-
-  //crypto
-  const [coins, setCoins] = useState([]);
-  const api = "https://api-mfikria.vercel.app/v2/crypto"
-  useEffect(() =>
-  {
-    axios.get(api).then((response) =>
-    {
-      setCoins(response.data)
-    }).catch((error) =>
-    {
-      console.log(error)
-    })
-  }, [])
-
   // This function will scroll the window to the top 
   const scrollToTop = () =>
   {
@@ -82,15 +58,8 @@ function App()
             <Route path="/project" element={<Projects />} />
             <Route path="/about" element={<About />} />
             <Route path="/price" element={<Price />} />
-            <Route path="/anime" element={<Anime />} />
-            <Route path="/music" element={<Music />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/updatelist" element={<UpdateList />} />
-            <Route path="/projectgabut/calculator" element={<Calculator />} />
-            <Route path="/projectgabut/coin" element={<Coins coins={coins} />}>
-              <Route path=':coinId' element={<Coin />} />
-            </Route>
-            {/* <Route path="/projectgabut/gallery" element={<Gallery />} /> */}
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />

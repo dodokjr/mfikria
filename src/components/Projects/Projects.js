@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-// import Particle from "../Particle";
 import DodokStore from "../../Assets/Projects/DodokStore.png";
 import Gabut from "../../Assets/Projects/gabut.png"
 import GithubApi from "./GithubApi/GithubApi";

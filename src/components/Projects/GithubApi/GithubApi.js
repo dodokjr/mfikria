@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-import Loading from "./Loading"
 import Profile from "./Profile"
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -33,19 +32,16 @@ function GithubApi()
         Project Hare
       </p>
 
-      {!items ? (
-        <Loading />
-      ) : (
-        <Container>
-          <Row>
-            {items.map((item) => (
-              <Col md={4} className="project-card">
-                <Profile key={item.id} {...item} />
-              </Col>
-            ))}
-          </Row>
-        </Container>
-      )}
+
+      <Container>
+        <Row>
+          {items.map((item) => (
+            <Col md={4} className="project-card">
+              <Profile key={item.id} {...item} />
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </>
   )
 }

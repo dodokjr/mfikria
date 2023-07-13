@@ -1,7 +1,5 @@
 import { React, useState, useEffect } from "react";
-import { Container, Card, Col, Row, Button } from "react-bootstrap";
-import Clock from "react-clock";
-import 'react-clock/dist/Clock.css';
+import { Container, Card, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Contact from "./Contact";
 import DatePeker from "./DatePaker";

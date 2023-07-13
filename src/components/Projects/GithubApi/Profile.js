@@ -40,7 +40,7 @@ export default function Profile(props)
             {props.name}
           </Button>
           <br />
-          <a href={props.homepage} target="_blank">
+          <a href={props.homepage}>
             &nbsp;
             {props.homepage}
           </a>
