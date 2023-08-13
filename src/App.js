@@ -22,6 +22,7 @@ import NotFound from "./components/NotFound";
 import NoInternetConnection from "./components/NoInternetConnection";
 import Blog from "./components/Blog/Blog";
 import Blogt from "./components/Blog/Blogt";
+import Cv from './components/Blog/Cv';
 
 function App()
 {
@@ -63,6 +64,7 @@ function App()
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/blogtext" element={<Blogt />} />
+            <Route path="/cv" element={<Cv />} />
             <Route path="/updatelist" element={<UpdateList />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

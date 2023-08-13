@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 const Cv = () =>
 {
     return (
-        <a href="https://resume.io/r/LO0QcU2kE">My Cv</a>
+        <Link to={'/cv'}>My Cv</Link>
     )
 }
 

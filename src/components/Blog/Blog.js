@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Imges from '../../Assets/logo.png';
+import Imges from '../../Assets/cvs.png';
 
 
 const Blog = () =>
@@ -24,18 +24,18 @@ const Blog = () =>
                                     alt='imgaes' />
                                 <Card.Body>
 
-                                    <Card.Title>Blog Title</Card.Title>
+                                    <Card.Title>Mfikria Cv By React and bootstrap</Card.Title>
                                     <Card.Text>
-                                        Blog Text
+                                        Saya Muhammad Fikri Ardiyansah Membuat Blog ini, dibuat untuk kesengan semata dan dibuat untuk ketrampilan saya pribadi, dan untuk portofolio project saya akan saya upload dan saya documentasikan disini mohon kasih masukannya untuk saya lebih kreatif dalam dunia percodinagn ini TerimaKasih.
                                     </Card.Text>
                                 </Card.Body>
                                 <Card.Body>
                                     <Button variant="primary" as={Link} to='/blog/blogText'>
-                                        Button
+                                        Cv Mfikria Di blog
                                     </Button>
                                 </Card.Body>
                                 <Card.Footer>
-                                    Blog Footer
+                                    #CVMFIKRIA
                                 </Card.Footer>
                             </Card>
                         </Col>

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import { Container } from "react-bootstrap"
+import { Container, Button } from "react-bootstrap"
 import { Link } from "react-router-dom";
 
 const NotFound = () =>
@@ -9,13 +9,10 @@ const NotFound = () =>
           document.title = 'Mfikria | 404'
      });
      return (
-          <Container fluid className="p404">
+          <Container fluid className="p404 text-center">
                <div>
-                    <h1>Oops! You seem to be lost.</h1>
-                    <p>Here are some helpful links:</p>
-                    <Link to='/'>Home</Link>
-                    <Link to='/about'>About</Link>
-                    <Link to='/contact'>Contact</Link>
+                    NotFound 404
+                    <Button as={Link} to='/'>Home</Button>
                </div>
           </Container>
      )
