@@ -15,7 +15,7 @@ import
   AiOutlineUser,
   AiOutlineHistory,
 } from "react-icons/ai";
-import { FaRegMoneyBillAlt } from "react-icons/fa"
+import { FaRegMoneyBillAlt, FaBlog } from "react-icons/fa"
 
 import { CgFileDocument } from "react-icons/cg";
 
@@ -99,6 +99,12 @@ function NavBar()
                 onClick={() => updateExpanded(false)}
               >
                 <FaRegMoneyBillAlt style={{ marginBottom: "2px" }} /> Price
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link as={Link} to="/blog" onClick={() => updateExpanded(false)} >
+                <FaBlog style={{ marginBottom: "2px" }} /> Blog
               </Nav.Link>
             </Nav.Item>
 

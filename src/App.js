@@ -20,6 +20,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 import NotFound from "./components/NotFound";
 import NoInternetConnection from "./components/NoInternetConnection";
+import Blog from "./components/Blog/Blog";
+import Blogt from "./components/Blog/Blogt";
 
 function App()
 {
@@ -59,6 +61,8 @@ function App()
             <Route path="/about" element={<About />} />
             <Route path="/price" element={<Price />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/blogtext" element={<Blogt />} />
             <Route path="/updatelist" element={<UpdateList />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
