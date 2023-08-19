@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import DodokStore from "../../Assets/Projects/DodokStore.png";
-import Gabut from "../../Assets/Projects/gabut.png"
+import Gabut from "../../Assets/Projects/gabut.png";
+import Myanimelist from "../../Assets/Projects/myanimelist.png";
 import GithubApi from "./GithubApi/GithubApi";
 
 
@@ -44,6 +45,16 @@ function Projects()
                 description="Project with Html Css Javascript"
                 ghLink="https://github.com/dodokjr/gabut-1"
                 demoLink="https://gabut-1.vercel.app/"
+              />
+            </Col>
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={Myanimelist}
+                isBlog={false}
+                title="Search anime with api"
+                description="Project with frontend Reactjs and backend Expressjs api with jikan anime"
+                ghLink="https://github.com/dodokjr/animeList"
+                demoLink="https://myanimeelist.vercel.app/"
               />
             </Col>
           </Row>
