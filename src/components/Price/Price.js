@@ -18,59 +18,9 @@ const Price = () =>
                     </h1>
                     <Cv />
                     <hr />
-                    <Row xs={1} md={3} className="g-4">
-                        <Col md={4}>
-                            <Card className="text-center">
-                                <Card.Header>Low</Card.Header>
-                                <Card.Body>
-                                    <Card.Title>$10</Card.Title>
-                                    <Card.Text>
-                                        <ListGroup className="list-group-flush">
-                                            <ListGroup.Item>Data Analist</ListGroup.Item>
-                                            <ListGroup.Item>Front end Devloper</ListGroup.Item>
-                                        </ListGroup>
-                                    </Card.Text>
-
-                                </Card.Body>
-                                <Card.Footer className="text-muted">Contact Me</Card.Footer>
-                            </Card>
-                        </Col>
-                        <Col md={4}>
-                            <Card className="text-center">
-                                <Card.Header>Medium Price</Card.Header>
-                                <Card.Body>
-                                    <Card.Title>$15</Card.Title>
-                                    <Card.Text>
-                                        <ListGroup className="list-group-flush">
-                                            <ListGroup.Item>Data Analist</ListGroup.Item>
-                                            <ListGroup.Item>Frontend and Backend</ListGroup.Item>
-                                            <ListGroup.Item>Full Maintenance</ListGroup.Item>
-                                        </ListGroup>
-                                    </Card.Text>
-
-                                </Card.Body>
-                                <Card.Footer className="text-muted">Contact Me</Card.Footer>
-                            </Card>
-                        </Col>
-                        <Col md={4}>
-                            <Card className="text-center">
-                                <Card.Header>Hard Price</Card.Header>
-                                <Card.Body>
-                                    <Card.Title>$20</Card.Title>
-                                    <Card.Text>
-                                        <ListGroup className="list-group-flush">
-                                            <ListGroup.Item>Data Analist</ListGroup.Item>
-                                            <ListGroup.Item>Frontend and Backend</ListGroup.Item>
-                                            <ListGroup.Item>Full  Maintenance</ListGroup.Item>
-                                            <ListGroup.Item>Full Language Code</ListGroup.Item>
-                                        </ListGroup>
-                                    </Card.Text>
-
-                                </Card.Body>
-                                <Card.Footer className="text-muted">Contact Me</Card.Footer>
-                            </Card>
-                        </Col>
-                    </Row>
+                    <div className="">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8nA-apwq0aY?si=Nufhve-sIxrLF0jb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
                 </Container>
             </Container>
             <Contact />

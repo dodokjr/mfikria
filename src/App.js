@@ -60,7 +60,7 @@ function App()
             <Route path="/" element={<Home />} />
             <Route path="/project" element={<Projects />} />
             <Route path="/about" element={<About />} />
-            <Route path="/price" element={<Price />} />
+            <Route path="/kaget" element={<Price />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/blogtext" element={<Blogt />} />
