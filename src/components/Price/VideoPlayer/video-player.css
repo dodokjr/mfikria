@@ -1,0 +1,13 @@
+.video-player {
+    text-align:center;
+  }
+  .video-player video {
+    width: 100%;
+  }
+  .video-player .controls {
+    margin-top: 2px;
+    padding-bottom: 2px;
+  }
+  .video-player .controls input[type="range"] {
+    width: 100%;
+  }

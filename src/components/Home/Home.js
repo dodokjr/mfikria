@@ -8,6 +8,10 @@ import Type from "./Type";
 
 function Home()
 {
+  useEffect(() =>
+  {
+    document.title = "MfikriA | Home";
+  })
   return (
     <section>
       <Container fluid className="home-section" id="home">

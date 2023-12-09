@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import DodokStore from "../../Assets/Projects/DodokStore.png";
 import Gabut from "../../Assets/Projects/gabut.png";
-import Myanimelist from "../../Assets/Projects/myanimelist.png";
+import Mfanimelist from "../../Assets/Projects/mfanimelist.png";
 import ApiMfikria from "../../Assets/Projects/api.png";
 import GithubApi from "./GithubApi/GithubApi";
 
@@ -50,12 +50,12 @@ function Projects()
             </Col>
             <Col md={4} className="project-card">
               <ProjectCard
-                imgPath={Myanimelist}
+                imgPath={Mfanimelist}
                 isBlog={false}
-                title="Search anime with api"
+                title="anime List"
                 description="Project with frontend Reactjs and backend Expressjs api with jikan anime"
                 ghLink="https://github.com/dodokjr/animeList"
-                demoLink="https://myandlist.vercel.app/"
+                demoLink="https://mfanimelist.vercel.app/"
               />
             </Col>
             <Col md={4} className="project-card">
