@@ -19,7 +19,7 @@ function Footer()
     const fetchRepos = async () =>
     {
       const res = await fetch(
-        'https://api-mfikria.vercel.app/link/'
+        "https://api-mfikria.vercel.app/link/"
       )
       const data = await res.json()
       setItems(data)
