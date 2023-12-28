@@ -19,6 +19,11 @@ html {
 } */
 
 
+.card {
+  text-decoration: none;
+}
+
+
 .blue {
   color: #0e58cf !important;
 }

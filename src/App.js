@@ -23,6 +23,7 @@ import NoInternetConnection from "./components/NoInternetConnection";
 import Blog from "./components/Blog/Blog";
 import Blogt from "./components/Blog/Blogt";
 import Cv from './components/Blog/Cv';
+import GithubRepos from "./page/github-repos/githubRepos";
 
 function App()
 {
@@ -66,6 +67,7 @@ function App()
             <Route path="/blog/blogtext" element={<Blogt />} />
             <Route path="/cv" element={<Cv />} />
             <Route path="/updatelist" element={<UpdateList />} />
+            <Route path="/project/:id" element={<GithubRepos />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
